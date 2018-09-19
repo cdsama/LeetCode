@@ -17,7 +17,7 @@ class Solution
         for (int i = 0, j = -1; i < l; i++)
         {
             char c = s[i];
-            auto& it = m[c];
+            auto &it = m[c];
             if (it > j)
             {
                 j = it;
