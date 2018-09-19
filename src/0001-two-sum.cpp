@@ -10,7 +10,7 @@ class Solution
         m.reserve(count);
         for (auto i = 0; i < count; ++i)
         {
-            auto &&numsi = nums[i];
+            auto &numsi = nums[i];
             auto itr = m.find(target - numsi);
             if (itr != m.end())
             {
