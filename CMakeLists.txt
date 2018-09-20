@@ -8,11 +8,11 @@ endif()
 project(LeetCode CXX)
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(Catch2 REQUIRED)
+find_package(Catch2 CONFIG REQUIRED)
 
 function(add_problem name)
     add_executable(${name} src/${name}.cpp)
-    target_link_libraries(${name} Catch2::Catch2)
+    target_link_libraries(${name} PRIVATE Catch2::Catch2)
 endfunction(add_problem)
 
 add_problem(0000-leet-code)
