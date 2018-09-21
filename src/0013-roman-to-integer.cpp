@@ -47,5 +47,5 @@ TEST_CASE("Roman to Integer", "roman-to-integer")
     CHECK(s.romanToInt("IV") == 4);
     CHECK(s.romanToInt("LVIII") == 58);
     CHECK(s.romanToInt("MCMXCIV") == 1994);
-    CHECK(s.romanToInt("MCMXXC") == 1980);
+    CHECK(s.romanToInt("MCMLXXX") == 1980);
 }
