@@ -15,7 +15,7 @@ class Solution
     }
 };
 
-TEST_CASE()
+TEST_CASE("Reverse Integer", "reverse-integer")
 {
     Solution s;
     CHECK(s.reverse(123) == 321);
