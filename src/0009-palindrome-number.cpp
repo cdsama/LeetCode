@@ -1,23 +1,17 @@
 #include "LeetCode.hpp"
 
-class Solution
-{
-  public:
-    bool isPalindrome(int x)
-    {
-        if (x < 0)
-        {
+class Solution {
+   public:
+    bool isPalindrome(int x) {
+        if (x < 0) {
             return false;
-        }
-        else if (x < 10)
-        {
+        } else if (x < 10) {
             return true;
         }
 
         int o = x;
         long long result = 0;
-        while (x)
-        {
+        while (x) {
             result = 10 * result + x % 10;
             x = x / 10;
         }
@@ -25,8 +19,7 @@ class Solution
     }
 };
 
-TEST_CASE("Palindrome Number", "palindrome-number")
-{
+TEST_CASE("Palindrome Number", "palindrome-number") {
     Solution s;
     CHECK(s.isPalindrome(123) == false);
     CHECK(s.isPalindrome(-123) == false);

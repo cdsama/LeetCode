@@ -1,13 +1,10 @@
 #include "LeetCode.hpp"
 
-class Solution
-{
-  public:
-    int reverse(int x)
-    {
+class Solution {
+   public:
+    int reverse(int x) {
         long long result = 0;
-        while (x)
-        {
+        while (x) {
             result = 10 * result + x % 10;
             x = x / 10;
         }
@@ -15,8 +12,7 @@ class Solution
     }
 };
 
-TEST_CASE("Reverse Integer", "reverse-integer")
-{
+TEST_CASE("Reverse Integer", "reverse-integer") {
     Solution s;
     CHECK(s.reverse(123) == 321);
     CHECK(s.reverse(-123) == -321);

@@ -1,30 +1,23 @@
 #include "LeetCode.hpp"
 
-class Solution
-{
-  public:
-    string longestCommonPrefix(vector<string> &strs)
-    {
+class Solution {
+   public:
+    string longestCommonPrefix(vector<string> &strs) {
         string prefix;
-        if (strs.empty())
-        {
+        if (strs.empty()) {
             return prefix;
         }
         auto &str0 = strs[0];
-        if (strs.size() == 1)
-        {
+        if (strs.size() == 1) {
             return str0;
         }
         auto str0size = str0.size();
         auto strssize = strs.size();
-        for (size_t i = 0; i < str0size; i++)
-        {
+        for (size_t i = 0; i < str0size; i++) {
             auto ch = str0[i];
-            for (size_t j = 1; j < strssize; j++)
-            {
+            for (size_t j = 1; j < strssize; j++) {
                 auto &strj = strs[j];
-                if (i > strj.size() || (strj[i] != ch))
-                {
+                if (i > strj.size() || (strj[i] != ch)) {
                     return prefix;
                 }
             }
@@ -35,8 +28,7 @@ class Solution
     }
 };
 
-TEST_CASE("Longest Common Prefix", "longest-common-prefix")
-{
+TEST_CASE("Longest Common Prefix", "longest-common-prefix") {
     Solution s;
     using tests = vector<pair<vector<string>, string>>;
     tests strs = {{{"flower", "flow", "flight"}, "fl"},
@@ -44,8 +36,7 @@ TEST_CASE("Longest Common Prefix", "longest-common-prefix")
                   {{"dog"}, "dog"},
                   {{}, ""}};
 
-    for (auto &p : strs)
-    {
+    for (auto &p : strs) {
         CHECK(s.longestCommonPrefix(p.first) == p.second);
     }
 }

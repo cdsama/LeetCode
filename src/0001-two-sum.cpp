@@ -1,19 +1,15 @@
 #include "LeetCode.hpp"
 
-class Solution
-{
-  public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
+class Solution {
+   public:
+    vector<int> twoSum(vector<int> &nums, int target) {
         unordered_map<int, int> m;
         auto count = nums.size();
         m.reserve(count);
-        for (auto i = 0; i < count; ++i)
-        {
+        for (auto i = 0; i < count; ++i) {
             auto &numsi = nums[i];
             auto itr = m.find(target - numsi);
-            if (itr != m.end())
-            {
+            if (itr != m.end()) {
                 return {itr->second, i};
             }
             m[numsi] = i;
@@ -22,8 +18,7 @@ class Solution
     }
 };
 
-TEST_CASE("Two Sum", "two-sum")
-{
+TEST_CASE("Two Sum", "two-sum") {
     Solution s;
 
     std::vector<int> v1{2, 7, 11, 15};

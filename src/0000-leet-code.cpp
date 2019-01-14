@@ -1,7 +1,6 @@
 #include "LeetCode.hpp"
 
-TEST_CASE("ListNode", "test")
-{
+TEST_CASE("ListNode", "test") {
     CHECK(ListCreate({}) == nullptr);
     CHECK(ListEquals(ListCreate({}), ListCreate({})));
     CHECK(ListEquals(ListCreate({1, 2, 3}), ListCreate({1, 2, 3})));

@@ -1,25 +1,20 @@
 #include "LeetCode.hpp"
 
-class Solution
-{
-  public:
-    int lengthOfLongestSubstring(string s)
-    {
+class Solution {
+   public:
+    int lengthOfLongestSubstring(string s) {
         int l = s.length();
-        if (l < 2)
-        {
+        if (l < 2) {
             return l;
         }
 
         vector<int> m(256, -1);
         int ms = 0;
 
-        for (int i = 0, j = -1; i < l; i++)
-        {
+        for (int i = 0, j = -1; i < l; i++) {
             char c = s[i];
             auto &it = m[c];
-            if (it > j)
-            {
+            if (it > j) {
                 j = it;
             }
             it = i;
@@ -30,8 +25,8 @@ class Solution
     }
 };
 
-TEST_CASE("Longest Substring Without Repeating Characters", "longest-substring-without-repeating-characters")
-{
+TEST_CASE("Longest Substring Without Repeating Characters",
+          "longest-substring-without-repeating-characters") {
     Solution s;
     CHECK(s.lengthOfLongestSubstring("") == 0);
     CHECK(s.lengthOfLongestSubstring("a") == 1);
