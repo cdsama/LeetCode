@@ -26,8 +26,11 @@ find_package(Catch2 CONFIG REQUIRED)
 
 function(add_problem name)
     add_executable(${name} src/${name}.cpp)
+    add_test(NAME ${name} COMMAND ${name})
     target_link_libraries(${name} PRIVATE Catch2::Catch2)
 endfunction(add_problem)
+
+enable_testing()
 
 add_problem(0000-leet-code)
 add_problem(0001-two-sum)
