@@ -4,9 +4,9 @@ class Solution {
    public:
     vector<int> twoSum(vector<int> &nums, int target) {
         unordered_map<int, int> m;
-        auto count = nums.size();
+        auto count = static_cast<int>(nums.size());
         m.reserve(count);
-        for (auto i = 0; i < count; ++i) {
+        for (int i = 0; i < count; ++i) {
             auto &numsi = nums[i];
             auto itr = m.find(target - numsi);
             if (itr != m.end()) {

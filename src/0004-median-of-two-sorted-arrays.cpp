@@ -3,8 +3,8 @@
 class Solution {
    public:
     double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
-        auto l1 = nums1.size();
-        auto l2 = nums2.size();
+        auto l1 = static_cast<int>(nums1.size());
+        auto l2 = static_cast<int>(nums2.size());
         if (l1 > l2) {
             return findMedianSortedArrays(nums2, nums1);
         }

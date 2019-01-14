@@ -1,6 +1,3 @@
-#pragma warning(disable : 4819)
-#pragma warning(disable : 4244)
-#pragma warning(disable : 4267)
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch.hpp>
 
