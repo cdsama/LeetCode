@@ -8,7 +8,8 @@ class Solution {
             result = 10 * result + x % 10;
             x = x / 10;
         }
-        return (result > INT_MAX || result < INT_MIN) ? 0 : result;
+        return static_cast<int>(
+            (result > INT_MAX || result < INT_MIN) ? 0 : result);
     }
 };
 

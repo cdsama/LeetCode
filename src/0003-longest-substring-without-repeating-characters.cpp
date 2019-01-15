@@ -3,7 +3,7 @@
 class Solution {
    public:
     int lengthOfLongestSubstring(string s) {
-        int l = s.length();
+        int l = static_cast<int>(s.length());
         if (l < 2) {
             return l;
         }
