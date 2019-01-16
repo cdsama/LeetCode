@@ -62,7 +62,7 @@ add_problem(0021  Easy   merge-two-sorted-lists) # Merge Two Sorted Lists
 add_problem(0026  Easy   remove-duplicates-from-sorted-array) # Remove Duplicates from Sorted Array
 #add_problem(0027  Easy   remove-element) # Remove Element
 #add_problem(0028  Easy   implement-strstr) # Implement strStr()
-# add_problem(0029 Medium  divide-two-integers) # Divide Two Integers
+add_problem(0029 Medium  divide-two-integers) # Divide Two Integers
 # #add_problem(0030  Hard   substring-with-concatenation-of-all-words) # Substring with Concatenation of All Words
 # #add_problem(0031 Medium  next-permutation) # Next Permutation
 # #add_problem(0032  Hard   longest-valid-parentheses) # Longest Valid Parentheses
