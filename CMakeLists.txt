@@ -63,42 +63,42 @@ add_problem(0026  Easy   remove-duplicates-from-sorted-array) # Remove Duplicate
 #add_problem(0027  Easy   remove-element) # Remove Element
 #add_problem(0028  Easy   implement-strstr) # Implement strStr()
 add_problem(0029 Medium  divide-two-integers) # Divide Two Integers
-# #add_problem(0030  Hard   substring-with-concatenation-of-all-words) # Substring with Concatenation of All Words
-# #add_problem(0031 Medium  next-permutation) # Next Permutation
-# #add_problem(0032  Hard   longest-valid-parentheses) # Longest Valid Parentheses
-# #add_problem(0033 Medium  search-in-rotated-sorted-array) # Search in Rotated Sorted Array
-# #add_problem(0034 Medium  find-first-and-last-position-of-element-in-sorted-array) # Find First and Last Position of Element in Sorted Array
-# #add_problem(0035  Easy   search-insert-position) # Search Insert Position
-# #add_problem(0036 Medium  valid-sudoku) # Valid Sudoku
-# #add_problem(0037  Hard   sudoku-solver) # Sudoku Solver
-# #add_problem(0038  Easy   count-and-say) # Count and Say
-# #add_problem(0039 Medium  combination-sum) # Combination Sum
-# #add_problem(0040 Medium  combination-sum-ii) # Combination Sum II
-# #add_problem(0041  Hard   first-missing-positive) # First Missing Positive
-# #add_problem(0042  Hard   trapping-rain-water) # Trapping Rain Water
-# #add_problem(0043 Medium  multiply-strings) # Multiply Strings
-# #add_problem(0044  Hard   wildcard-matching) # Wildcard Matching
-# #add_problem(0045  Hard   jump-game-ii) # Jump Game II
-# #add_problem(0046 Medium  permutations) # Permutations
-# #add_problem(0047 Medium  permutations-ii) # Permutations II
-# #add_problem(0048 Medium  rotate-image) # Rotate Image
-# #add_problem(0049 Medium  group-anagrams) # Group Anagrams
-# #add_problem(0050 Medium  powx-n) # Pow(x, n)
-# #add_problem(0051  Hard   n-queens) # N-Queens
-# #add_problem(0052  Hard   n-queens-ii) # N-Queens II
-# #add_problem(0053  Easy   maximum-subarray) # Maximum Subarray
-# #add_problem(0054 Medium  spiral-matrix) # Spiral Matrix
-# #add_problem(0055 Medium  jump-game) # Jump Game
-# #add_problem(0056 Medium  merge-intervals) # Merge Intervals
-# #add_problem(0057  Hard   insert-interval) # Insert Interval
-# #add_problem(0058  Easy   length-of-last-word) # Length of Last Word
-# #add_problem(0059 Medium  spiral-matrix-ii) # Spiral Matrix II
-# #add_problem(0060 Medium  permutation-sequence) # Permutation Sequence
-# #add_problem(0061 Medium  rotate-list) # Rotate List
-# #add_problem(0062 Medium  unique-paths) # Unique Paths
-# #add_problem(0063 Medium  unique-paths-ii) # Unique Paths II
-# #add_problem(0064 Medium  minimum-path-sum) # Minimum Path Sum
-# add_problem(0065  Hard   valid-number) # Valid Number
+#add_problem(0030  Hard   substring-with-concatenation-of-all-words) # Substring with Concatenation of All Words
+#add_problem(0031 Medium  next-permutation) # Next Permutation
+#add_problem(0032  Hard   longest-valid-parentheses) # Longest Valid Parentheses
+#add_problem(0033 Medium  search-in-rotated-sorted-array) # Search in Rotated Sorted Array
+#add_problem(0034 Medium  find-first-and-last-position-of-element-in-sorted-array) # Find First and Last Position of Element in Sorted Array
+#add_problem(0035  Easy   search-insert-position) # Search Insert Position
+#add_problem(0036 Medium  valid-sudoku) # Valid Sudoku
+#add_problem(0037  Hard   sudoku-solver) # Sudoku Solver
+#add_problem(0038  Easy   count-and-say) # Count and Say
+#add_problem(0039 Medium  combination-sum) # Combination Sum
+#add_problem(0040 Medium  combination-sum-ii) # Combination Sum II
+#add_problem(0041  Hard   first-missing-positive) # First Missing Positive
+#add_problem(0042  Hard   trapping-rain-water) # Trapping Rain Water
+#add_problem(0043 Medium  multiply-strings) # Multiply Strings
+#add_problem(0044  Hard   wildcard-matching) # Wildcard Matching
+#add_problem(0045  Hard   jump-game-ii) # Jump Game II
+#add_problem(0046 Medium  permutations) # Permutations
+#add_problem(0047 Medium  permutations-ii) # Permutations II
+#add_problem(0048 Medium  rotate-image) # Rotate Image
+#add_problem(0049 Medium  group-anagrams) # Group Anagrams
+#add_problem(0050 Medium  powx-n) # Pow(x, n)
+#add_problem(0051  Hard   n-queens) # N-Queens
+#add_problem(0052  Hard   n-queens-ii) # N-Queens II
+#add_problem(0053  Easy   maximum-subarray) # Maximum Subarray
+#add_problem(0054 Medium  spiral-matrix) # Spiral Matrix
+#add_problem(0055 Medium  jump-game) # Jump Game
+#add_problem(0056 Medium  merge-intervals) # Merge Intervals
+#add_problem(0057  Hard   insert-interval) # Insert Interval
+#add_problem(0058  Easy   length-of-last-word) # Length of Last Word
+#add_problem(0059 Medium  spiral-matrix-ii) # Spiral Matrix II
+#add_problem(0060 Medium  permutation-sequence) # Permutation Sequence
+#add_problem(0061 Medium  rotate-list) # Rotate List
+#add_problem(0062 Medium  unique-paths) # Unique Paths
+#add_problem(0063 Medium  unique-paths-ii) # Unique Paths II
+#add_problem(0064 Medium  minimum-path-sum) # Minimum Path Sum
+add_problem(0065  Hard   valid-number) # Valid Number
 # add_problem(0066  Easy   plus-one) # Plus One
 # #add_problem(0067  Easy   add-binary) # Add Binary
 # #add_problem(0068  Hard   text-justification) # Text Justification
