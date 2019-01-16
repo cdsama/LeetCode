@@ -99,40 +99,40 @@ add_problem(0029 Medium  divide-two-integers) # Divide Two Integers
 #add_problem(0063 Medium  unique-paths-ii) # Unique Paths II
 #add_problem(0064 Medium  minimum-path-sum) # Minimum Path Sum
 add_problem(0065  Hard   valid-number) # Valid Number
-# add_problem(0066  Easy   plus-one) # Plus One
-# #add_problem(0067  Easy   add-binary) # Add Binary
-# #add_problem(0068  Hard   text-justification) # Text Justification
-# #add_problem(0069  Easy   sqrtx) # Sqrt(x)
-# #add_problem(0070  Easy   climbing-stairs) # Climbing Stairs
-# #add_problem(0071 Medium  simplify-path) # Simplify Path
-# #add_problem(0072  Hard   edit-distance) # Edit Distance
-# #add_problem(0073 Medium  set-matrix-zeroes) # Set Matrix Zeroes
-# #add_problem(0074 Medium  search-a-2d-matrix) # Search a 2D Matrix
-# #add_problem(0075 Medium  sort-colors) # Sort Colors
-# #add_problem(0076  Hard   minimum-window-substring) # Minimum Window Substring
-# #add_problem(0077 Medium  combinations) # Combinations
-# #add_problem(0078 Medium  subsets) # Subsets
-# #add_problem(0079 Medium  word-search) # Word Search
-# #add_problem(0080 Medium  remove-duplicates-from-sorted-array-ii) # Remove Duplicates from Sorted Array II
-# #add_problem(0081 Medium  search-in-rotated-sorted-array-ii) # Search in Rotated Sorted Array II
-# #add_problem(0082 Medium  remove-duplicates-from-sorted-list-ii) # Remove Duplicates from Sorted List II
-# #add_problem(0083  Easy   remove-duplicates-from-sorted-list) # Remove Duplicates from Sorted List
-# #add_problem(0084  Hard   largest-rectangle-in-histogram) # Largest Rectangle in Histogram
-# #add_problem(0085  Hard   maximal-rectangle) # Maximal Rectangle
-# #add_problem(0086 Medium  partition-list) # Partition List
-# #add_problem(0087  Hard   scramble-string) # Scramble String
-# #add_problem(0088  Easy   merge-sorted-array) # Merge Sorted Array
-# #add_problem(0089 Medium  gray-code) # Gray Code
-# #add_problem(0090 Medium  subsets-ii) # Subsets II
-# #add_problem(0091 Medium  decode-ways) # Decode Ways
-# #add_problem(0092 Medium  reverse-linked-list-ii) # Reverse Linked List II
-# #add_problem(0093 Medium  restore-ip-addresses) # Restore IP Addresses
-# #add_problem(0094 Medium  binary-tree-inorder-traversal) # Binary Tree Inorder Traversal
-# #add_problem(0095 Medium  unique-binary-search-trees-ii) # Unique Binary Search Trees II
-# #add_problem(0096 Medium  unique-binary-search-trees) # Unique Binary Search Trees
-# #add_problem(0097  Hard   interleaving-string) # Interleaving String
-# #add_problem(0098 Medium  validate-binary-search-tree) # Validate Binary Search Tree
-# #add_problem(0099  Hard   recover-binary-search-tree) # Recover Binary Search Tree
+add_problem(0066  Easy   plus-one) # Plus One
+#add_problem(0067  Easy   add-binary) # Add Binary
+#add_problem(0068  Hard   text-justification) # Text Justification
+#add_problem(0069  Easy   sqrtx) # Sqrt(x)
+#add_problem(0070  Easy   climbing-stairs) # Climbing Stairs
+#add_problem(0071 Medium  simplify-path) # Simplify Path
+#add_problem(0072  Hard   edit-distance) # Edit Distance
+#add_problem(0073 Medium  set-matrix-zeroes) # Set Matrix Zeroes
+#add_problem(0074 Medium  search-a-2d-matrix) # Search a 2D Matrix
+#add_problem(0075 Medium  sort-colors) # Sort Colors
+#add_problem(0076  Hard   minimum-window-substring) # Minimum Window Substring
+#add_problem(0077 Medium  combinations) # Combinations
+#add_problem(0078 Medium  subsets) # Subsets
+#add_problem(0079 Medium  word-search) # Word Search
+#add_problem(0080 Medium  remove-duplicates-from-sorted-array-ii) # Remove Duplicates from Sorted Array II
+#add_problem(0081 Medium  search-in-rotated-sorted-array-ii) # Search in Rotated Sorted Array II
+#add_problem(0082 Medium  remove-duplicates-from-sorted-list-ii) # Remove Duplicates from Sorted List II
+#add_problem(0083  Easy   remove-duplicates-from-sorted-list) # Remove Duplicates from Sorted List
+#add_problem(0084  Hard   largest-rectangle-in-histogram) # Largest Rectangle in Histogram
+#add_problem(0085  Hard   maximal-rectangle) # Maximal Rectangle
+#add_problem(0086 Medium  partition-list) # Partition List
+#add_problem(0087  Hard   scramble-string) # Scramble String
+#add_problem(0088  Easy   merge-sorted-array) # Merge Sorted Array
+#add_problem(0089 Medium  gray-code) # Gray Code
+#add_problem(0090 Medium  subsets-ii) # Subsets II
+#add_problem(0091 Medium  decode-ways) # Decode Ways
+#add_problem(0092 Medium  reverse-linked-list-ii) # Reverse Linked List II
+#add_problem(0093 Medium  restore-ip-addresses) # Restore IP Addresses
+#add_problem(0094 Medium  binary-tree-inorder-traversal) # Binary Tree Inorder Traversal
+#add_problem(0095 Medium  unique-binary-search-trees-ii) # Unique Binary Search Trees II
+#add_problem(0096 Medium  unique-binary-search-trees) # Unique Binary Search Trees
+#add_problem(0097  Hard   interleaving-string) # Interleaving String
+#add_problem(0098 Medium  validate-binary-search-tree) # Validate Binary Search Tree
+#add_problem(0099  Hard   recover-binary-search-tree) # Recover Binary Search Tree
 # add_problem(0100  Easy   same-tree) # Same Tree
 # #add_problem(0101  Easy   symmetric-tree) # Symmetric Tree
 # add_problem(0102 Medium  binary-tree-level-order-traversal) # Binary Tree Level Order Traversal
