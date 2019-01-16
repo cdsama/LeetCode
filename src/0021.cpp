@@ -1,5 +1,18 @@
 #include "LeetCode.hpp"
 
+/*
+21. Merge Two Sorted Lists
+Easy
+
+Merge two sorted linked lists and return it as a new list. The new list should
+be made by splicing together the nodes of the first two lists.
+
+Example:
+    Input: 1->2->4, 1->3->4
+    Output: 1->1->2->3->4->4
+
+*/
+
 class Solution {
    public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
@@ -27,7 +40,7 @@ class Solution {
     }
 };
 
-TEST_CASE("Valid Parentheses", "valid-parentheses") {
+TEST_CASE(TEST_NAME, TEST_TAGS) {
     Solution s;
     CHECK(ListEquals(s.mergeTwoLists(ListCreate({}), ListCreate({})),
                      ListCreate({})));
