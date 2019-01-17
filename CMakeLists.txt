@@ -135,7 +135,7 @@ add_problem(0066  Easy   plus-one) # Plus One
 #add_problem(0099  Hard   recover-binary-search-tree) # Recover Binary Search Tree
 add_problem(0100  Easy   same-tree) # Same Tree
 add_problem(0101  Easy   symmetric-tree) # Symmetric Tree
-# add_problem(0102 Medium  binary-tree-level-order-traversal) # Binary Tree Level Order Traversal
+add_problem(0102 Medium  binary-tree-level-order-traversal) # Binary Tree Level Order Traversal
 # #add_problem(0103 Medium  binary-tree-zigzag-level-order-traversal) # Binary Tree Zigzag Level Order Traversal
 # add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary Tree
 # #add_problem(0105 Medium  construct-binary-tree-from-preorder-and-inorder-traversal) # Construct Binary Tree from Preorder and Inorder Traversal
