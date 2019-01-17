@@ -24,7 +24,7 @@ Example 2:
             2             2
 
             [1,2],     [1,null,2]
-            
+
 
     Output: false
 
@@ -59,19 +59,22 @@ class Solution2 {  // loop
         st.push({p, q});
         while (!st.empty()) {
             auto pair = st.top();
+            st.pop();
             auto pp = pair.first;
             auto qq = pair.second;
+            if (pp == nullptr && qq == nullptr) {
+                continue;
+            }
             if (pp == nullptr || qq == nullptr) {
-                return pp == qq;
+                return false;
             }
             if (pp->val != qq->val) {
                 return false;
             }
-            st.pop();
             st.push({pp->left, qq->left});
             st.push({pp->right, qq->right});
         }
-        return false;
+        return true;
     }
 };
 
@@ -87,6 +90,8 @@ TEST_CASE(TEST_NAME, TEST_TAGS) {
               false);
         CHECK(s.isSameTree(TreeCreate({1, 2, 1}), TreeCreate({1, 1, 2})) ==
               false);
+        CHECK(s.isSameTree(TreeCreate({1, 2, 3, 4}),
+                           TreeCreate({1, 2, 3, 4})) == true);
     }
     {
         Solution2 s;
@@ -99,5 +104,7 @@ TEST_CASE(TEST_NAME, TEST_TAGS) {
               false);
         CHECK(s.isSameTree(TreeCreate({1, 2, 1}), TreeCreate({1, 1, 2})) ==
               false);
+        CHECK(s.isSameTree(TreeCreate({1, 2, 3, {}, 4}),
+                           TreeCreate({1, 2, 3, {}, 5})) == false);
     }
 }
