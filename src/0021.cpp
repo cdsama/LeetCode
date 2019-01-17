@@ -42,12 +42,9 @@ class Solution {
 
 TEST_CASE(TEST_NAME, TEST_TAGS) {
     Solution s;
-    CHECK(ListEquals(s.mergeTwoLists(ListCreate({}), ListCreate({})),
-                     ListCreate({})));
-    CHECK(ListEquals(
-        s.mergeTwoLists(ListCreate({1, 3, 5}), ListCreate({2, 4, 6})),
-        ListCreate({1, 2, 3, 4, 5, 6})));
-    CHECK(ListEquals(
-        s.mergeTwoLists(ListCreate({1, 2, 4}), ListCreate({1, 3, 4})),
-        ListCreate({1, 1, 2, 3, 4, 4})));
+    CHECK(ListEquals(s.mergeTwoLists(LIST(), LIST()), LIST()));
+    CHECK(ListEquals(s.mergeTwoLists(LIST(1, 3, 5), LIST(2, 4, 6)),
+                     LIST(1, 2, 3, 4, 5, 6)));
+    CHECK(ListEquals(s.mergeTwoLists(LIST(1, 2, 4), LIST(1, 3, 4)),
+                     LIST(1, 1, 2, 3, 4, 4)));
 }

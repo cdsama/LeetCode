@@ -1,19 +1,19 @@
 #include "LeetCode.hpp"
 
 TEST_CASE(TEST_NAME, TEST_TAGS) {
-    CHECK(ListCreate({}) == nullptr);
-    CHECK(ListEquals(ListCreate({}), ListCreate({})));
-    CHECK(ListEquals(ListCreate({1, 2, 3}), ListCreate({1, 2, 3})));
-    CHECK_FALSE(ListEquals(ListCreate({1}), ListCreate({})));
-    CHECK_FALSE(ListEquals(ListCreate({1, 2, 3}), ListCreate({1, 2, 3, 4})));
+    CHECK(LIST() == nullptr);
+    CHECK(ListEquals(LIST(), LIST()));
+    CHECK(ListEquals(LIST(1, 2, 3), LIST(1, 2, 3)));
+    CHECK_FALSE(ListEquals(LIST(1), LIST()));
+    CHECK_FALSE(ListEquals(LIST(1, 2, 3), LIST(1, 2, 3, 4)));
     ostringstream s;
-    ListPrint(s, ListCreate({1, 2, 3}));
+    ListPrint(s, LIST(1, 2, 3));
     CHECK(s.str() == "1 -> 2 -> 3 -> \n");
     s.str("");
-    ListPrint(s, ListCreate({0}));
+    ListPrint(s, LIST(0));
     CHECK(s.str() == "0 -> \n");
     s.str("");
-    ListPrint(s, ListCreate({}));
+    ListPrint(s, LIST());
     CHECK(s.str() == "\n");
     CHECK(TreeCreate({}) == nullptr);
     CHECK(TreeCreate({{}}) == nullptr);
@@ -21,7 +21,7 @@ TEST_CASE(TEST_NAME, TEST_TAGS) {
         auto root = new TreeNode(1);
         root->left = new TreeNode(2);
         root->right = new TreeNode(3);
-        CHECK(TreeEquals(root, TreeCreate({1, 2, 3})));
+        CHECK(TreeEquals(root, TREE(1, 2, 3)));
     }
     {
         auto n1 = new TreeNode(1);
@@ -42,7 +42,6 @@ TEST_CASE(TEST_NAME, TEST_TAGS) {
         auto n9 = new TreeNode(9);
         n5->right = n9;
 
-        CHECK(TreeEquals(
-            n1, TreeCreate({1, 2, 3, 4, {}, 5, 6, 7, 8, {}, {}, {}, 9})));
+        CHECK(TreeEquals(n1, TREE(1, 2, 3, 4, {}, 5, 6, 7, 8, {}, {}, {}, 9)));
     }
 }

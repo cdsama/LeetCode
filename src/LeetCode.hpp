@@ -32,6 +32,8 @@ ListNode *ListCreate(initializer_list<int> &&lst) {
     return head;
 }
 
+#define LIST(...) ListCreate({__VA_ARGS__})
+
 void ListPrint(ostream &os, ListNode *head) {
     ListNode *node = head;
     while (node) {
@@ -107,6 +109,8 @@ TreeNode *TreeCreate(initializer_list<optional<int>> &&lst) {
     }
     return vec[0];
 }
+
+#define TREE(...) TreeCreate({__VA_ARGS__})
 
 bool TreeEquals(TreeNode *p, TreeNode *q) {
     if (p == nullptr && q == nullptr) {

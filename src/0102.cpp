@@ -55,5 +55,5 @@ class Solution {
 TEST_CASE(TEST_NAME, TEST_TAGS) {
     Solution s;
     vector<vector<int>> ans = {{3}, {9, 20}, {15, 7}};
-    CHECK(s.levelOrder(TreeCreate({3, 9, 20, {}, {}, 15, 7})) == ans);
+    CHECK(s.levelOrder(TREE(3, 9, 20, {}, {}, 15, 7)) == ans);
 }

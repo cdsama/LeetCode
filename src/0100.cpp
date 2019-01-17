@@ -81,30 +81,23 @@ class Solution2 {  // loop
 TEST_CASE(TEST_NAME, TEST_TAGS) {
     {
         Solution s;
-        CHECK(s.isSameTree(TreeCreate({}), TreeCreate({1, 2, 3})) == false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3}), TreeCreate({})) == false);
-        CHECK(s.isSameTree(TreeCreate({}), TreeCreate({})) == true);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3}), TreeCreate({1, 2, 3})) ==
-              true);
-        CHECK(s.isSameTree(TreeCreate({1, 2}), TreeCreate({1, {}, 2})) ==
-              false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 1}), TreeCreate({1, 1, 2})) ==
-              false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3, 4}),
-                           TreeCreate({1, 2, 3, 4})) == true);
+        CHECK(s.isSameTree(TREE(), TREE(1, 2, 3)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 3), TREE()) == false);
+        CHECK(s.isSameTree(TREE(), TREE()) == true);
+        CHECK(s.isSameTree(TREE(1, 2, 3), TREE(1, 2, 3)) == true);
+        CHECK(s.isSameTree(TREE(1, 2), TREE(1, {}, 2)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 1), TREE(1, 1, 2)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 3, 4), TREE(1, 2, 3, 4)) == true);
     }
     {
         Solution2 s;
-        CHECK(s.isSameTree(TreeCreate({}), TreeCreate({1, 2, 3})) == false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3}), TreeCreate({})) == false);
-        CHECK(s.isSameTree(TreeCreate({}), TreeCreate({})) == true);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3}), TreeCreate({1, 2, 3})) ==
-              true);
-        CHECK(s.isSameTree(TreeCreate({1, 2}), TreeCreate({1, {}, 2})) ==
+        CHECK(s.isSameTree(TREE(), TREE(1, 2, 3)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 3), TREE()) == false);
+        CHECK(s.isSameTree(TREE(), TREE()) == true);
+        CHECK(s.isSameTree(TREE(1, 2, 3), TREE(1, 2, 3)) == true);
+        CHECK(s.isSameTree(TREE(1, 2), TREE(1, {}, 2)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 1), TREE(1, 1, 2)) == false);
+        CHECK(s.isSameTree(TREE(1, 2, 3, {}, 4), TREE(1, 2, 3, {}, 5)) ==
               false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 1}), TreeCreate({1, 1, 2})) ==
-              false);
-        CHECK(s.isSameTree(TreeCreate({1, 2, 3, {}, 4}),
-                           TreeCreate({1, 2, 3, {}, 5})) == false);
     }
 }

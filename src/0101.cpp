@@ -80,16 +80,16 @@ class Solution2 {
 TEST_CASE(TEST_NAME, TEST_TAGS) {
     {
         Solution s;
-        CHECK(s.isSymmetric(TreeCreate({})) == true);
-        CHECK(s.isSymmetric(TreeCreate({2, 3, 3, 4, 5, 5})) == false);
-        CHECK(s.isSymmetric(TreeCreate({1, 2, 2, 3, 4, 4, 3})) == true);
-        CHECK(s.isSymmetric(TreeCreate({1, 2, 2, {}, 3, {}, 3})) == false);
+        CHECK(s.isSymmetric(TREE()) == true);
+        CHECK(s.isSymmetric(TREE(2, 3, 3, 4, 5, 5)) == false);
+        CHECK(s.isSymmetric(TREE(1, 2, 2, 3, 4, 4, 3)) == true);
+        CHECK(s.isSymmetric(TREE(1, 2, 2, {}, 3, {}, 3)) == false);
     }
     {
         Solution2 s;
-        CHECK(s.isSymmetric(TreeCreate({})) == true);
-        CHECK(s.isSymmetric(TreeCreate({2, 3, 3, 4, 5, 5})) == false);
-        CHECK(s.isSymmetric(TreeCreate({1, 2, 2, 3, 4, 4, 3})) == true);
-        CHECK(s.isSymmetric(TreeCreate({1, 2, 2, {}, 3, {}, 3})) == false);
+        CHECK(s.isSymmetric(TREE()) == true);
+        CHECK(s.isSymmetric(TREE(2, 3, 3, 4, 5, 5)) == false);
+        CHECK(s.isSymmetric(TREE(1, 2, 2, 3, 4, 4, 3)) == true);
+        CHECK(s.isSymmetric(TREE(1, 2, 2, {}, 3, {}, 3)) == false);
     }
 }

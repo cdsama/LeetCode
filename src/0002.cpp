@@ -66,26 +66,17 @@ class Solution {
 
 TEST_CASE(TEST_NAME, TEST_TAGS) {
     Solution s;
-    CHECK(ListEquals(s.addTwoNumbers(ListCreate({}), ListCreate({})),
-                     ListCreate({})));
-    CHECK(ListEquals(s.addTwoNumbers(ListCreate({}), ListCreate({1})),
-                     ListCreate({1})));
-    CHECK(ListEquals(s.addTwoNumbers(ListCreate({2}), ListCreate({})),
-                     ListCreate({2})));
-    CHECK(ListEquals(s.addTwoNumbers(ListCreate({1}), ListCreate({2})),
-                     ListCreate({3})));
-    CHECK(ListEquals(s.addTwoNumbers(ListCreate({1, 1}), ListCreate({2, 2})),
-                     ListCreate({3, 3})));
-    CHECK(ListEquals(
-        s.addTwoNumbers(ListCreate({9, 1, 1}), ListCreate({2, 2, 2})),
-        ListCreate({1, 4, 3})));
-    CHECK(ListEquals(
-        s.addTwoNumbers(ListCreate({4, 1, 3, 1}), ListCreate({0, 2, 5})),
-        ListCreate({4, 3, 8, 1})));
-    CHECK(ListEquals(
-        s.addTwoNumbers(ListCreate({1}), ListCreate({9, 9, 9, 9, 9})),
-        ListCreate({0, 0, 0, 0, 0, 1})));
-    CHECK(ListEquals(
-        s.addTwoNumbers(ListCreate({1}), ListCreate({9, 0, 0, 0, 0, 1})),
-        ListCreate({0, 1, 0, 0, 0, 1})));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(2), LIST()), LIST(2)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(2)), LIST(3)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(1, 1), LIST(2, 2)), LIST(3, 3)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(9, 1, 1), LIST(2, 2, 2)),
+                     LIST(1, 4, 3)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(4, 1, 3, 1), LIST(0, 2, 5)),
+                     LIST(4, 3, 8, 1)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 9, 9, 9, 9)),
+                     LIST(0, 0, 0, 0, 0, 1)));
+    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 0, 0, 0, 0, 1)),
+                     LIST(0, 1, 0, 0, 0, 1)));
 }
