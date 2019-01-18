@@ -208,29 +208,13 @@ add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary
 # #add_problem(0172  Easy   factorial-trailing-zeroes) # Factorial Trailing Zeroes
 # #add_problem(0173 Medium  binary-search-tree-iterator) # Binary Search Tree Iterator
 # #add_problem(0174  Hard   dungeon-game) # Dungeon Game
-# #add_problem(0175  Easy   combine-two-tables) # Combine Two Tables
-# #add_problem(0176  Easy   second-highest-salary) # Second Highest Salary
-# #add_problem(0177 Medium  nth-highest-salary) # Nth Highest Salary
-# #add_problem(0178 Medium  rank-scores) # Rank Scores
 # #add_problem(0179 Medium  largest-number) # Largest Number
-# #add_problem(0180 Medium  consecutive-numbers) # Consecutive Numbers
-# #add_problem(0181  Easy   employees-earning-more-than-their-managers) # Employees Earning More Than Their Managers
-# #add_problem(0182  Easy   duplicate-emails) # Duplicate Emails
-# #add_problem(0183  Easy   customers-who-never-order) # Customers Who Never Order
-# #add_problem(0184 Medium  department-highest-salary) # Department Highest Salary
-# #add_problem(0185  Hard   department-top-three-salaries) # Department Top Three Salaries
 # #add_problem(0186 Medium  reverse-words-in-a-string-ii) # Reverse Words in a String II
 # #add_problem(0187 Medium  repeated-dna-sequences) # Repeated DNA Sequences
 # #add_problem(0188  Hard   best-time-to-buy-and-sell-stock-iv) # Best Time to Buy and Sell Stock IV
 # #add_problem(0189  Easy   rotate-array) # Rotate Array
 # #add_problem(0190  Easy   reverse-bits) # Reverse Bits
 # add_problem(0191  Easy   number-of-1-bits) # Number of 1 Bits
-# #add_problem(0192 Medium  word-frequency) # Word Frequency
-# #add_problem(0193  Easy   valid-phone-numbers) # Valid Phone Numbers
-# #add_problem(0194 Medium  transpose-file) # Transpose File
-# add_problem(0195  Easy   tenth-line) # Tenth Line
-# #add_problem(0196  Easy   delete-duplicate-emails) # Delete Duplicate Emails
-# #add_problem(0197  Easy   rising-temperature) # Rising Temperature
 # #add_problem(0198  Easy   house-robber) # House Robber
 # #add_problem(0199 Medium  binary-tree-right-side-view) # Binary Tree Right Side View
 # #add_problem(0200 Medium  number-of-islands) # Number of Islands
@@ -295,7 +279,6 @@ add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary
 # #add_problem(0259 Medium  3sum-smaller) # 3Sum Smaller
 # #add_problem(0260 Medium  single-number-iii) # Single Number III
 # #add_problem(0261 Medium  graph-valid-tree) # Graph Valid Tree
-# #add_problem(0262  Hard   trips-and-users) # Trips and Users
 # #add_problem(0263  Easy   ugly-number) # Ugly Number
 # #add_problem(0264 Medium  ugly-number-ii) # Ugly Number II
 # #add_problem(0265  Hard   paint-house-ii) # Paint House II
@@ -623,13 +606,10 @@ add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary
 # #add_problem(0592 Medium  fraction-addition-and-subtraction) # Fraction Addition and Subtraction
 # #add_problem(0593 Medium  valid-square) # Valid Square
 # #add_problem(0594  Easy   longest-harmonious-subsequence) # Longest Harmonious Subsequence
-# #add_problem(0595  Easy   big-countries) # Big Countries
-# #add_problem(0596  Easy   classes-more-than-5-students) # Classes More Than 5 Students
 # #add_problem(0597  Easy   friend-requests-i-overall-acceptance-rate) # Friend Requests I: Overall Acceptance Rate
 # #add_problem(0598  Easy   range-addition-ii) # Range Addition II
 # #add_problem(0599  Easy   minimum-index-sum-of-two-lists) # Minimum Index Sum of Two Lists
 # #add_problem(0600  Hard   non-negative-integers-without-consecutive-ones) # Non-negative Integers without Consecutive Ones
-# #add_problem(0601  Hard   human-traffic-of-stadium) # Human Traffic of Stadium
 # #add_problem(0602 Medium  friend-requests-ii-who-has-the-most-friends) # Friend Requests II: Who Has the Most Friends
 # #add_problem(0603  Easy   consecutive-available-seats) # Consecutive Available Seats
 # #add_problem(0604  Easy   design-compressed-string-iterator) # Design Compressed String Iterator
@@ -648,14 +628,11 @@ add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary
 # #add_problem(0617  Easy   merge-two-binary-trees) # Merge Two Binary Trees
 # #add_problem(0618  Hard   students-report-by-geography) # Students Report By Geography
 # #add_problem(0619  Easy   biggest-single-number) # Biggest Single Number
-# #add_problem(0620  Easy   not-boring-movies) # Not Boring Movies
 # #add_problem(0621 Medium  task-scheduler) # Task Scheduler
 # #add_problem(0622 Medium  design-circular-queue) # Design Circular Queue
 # #add_problem(0623 Medium  add-one-row-to-tree) # Add One Row to Tree
 # #add_problem(0624  Easy   maximum-distance-in-arrays) # Maximum Distance in Arrays
 # #add_problem(0625 Medium  minimum-factorization) # Minimum Factorization
-# #add_problem(0626 Medium  exchange-seats) # Exchange Seats
-# #add_problem(0627  Easy   swap-salary) # Swap Salary
 # #add_problem(0628  Easy   maximum-product-of-three-numbers) # Maximum Product of Three Numbers
 # #add_problem(0629  Hard   k-inverse-pairs-array) # K Inverse Pairs Array
 # #add_problem(0630  Hard   course-schedule-iii) # Course Schedule III
