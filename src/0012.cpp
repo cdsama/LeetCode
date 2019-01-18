@@ -28,6 +28,7 @@ instances where subtraction is used:
 I can be placed before V (5) and X (10) to make 4 and 9.
 X can be placed before L (50) and C (100) to make 40 and 90.
 C can be placed before D (500) and M (1000) to make 400 and 900.
+
 Given an integer, convert it to a roman numeral. Input is guaranteed to be
 within the range from 1 to 3999.
 
@@ -53,6 +54,14 @@ Example 5:
     Output: "MCMXCIV"
     Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
+Tags:
+    1. Math
+    2. String
+
+Similar Questions:
+    1. Roman to Integer
+    2. Integer to English Words
+
 */
 
 class Solution {
@@ -73,7 +82,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("integer-to-roman", "[12][Medium][math][string]") {
     Solution s;
     CHECK(s.intToRoman(3) == "III");
     CHECK(s.intToRoman(4) == "IV");

@@ -20,6 +20,10 @@ Example 2:
 
 Note:
 All given inputs are in lowercase letters a-z.
+
+Tags:
+    1. String
+
 */
 
 class Solution {
@@ -50,7 +54,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("longest-common-prefix", "[14][Easy][string]") {
     Solution s;
     using tests = vector<pair<vector<string>, string>>;
     tests strs = {{{"flower", "flow", "flight"}, "fl"},

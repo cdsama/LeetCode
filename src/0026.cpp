@@ -36,6 +36,15 @@ int len = removeDuplicates(nums);
 for (int i = 0; i < len; i++) {
     print(nums[i]);
 }
+
+Tags:
+    1. Array
+    2. Two Pointers
+
+Similar Questions:
+    1. Remove Element
+    2. Remove Duplicates from Sorted Array II
+
 */
 
 class Solution {
@@ -63,7 +72,8 @@ class Solution2 {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("remove-duplicates-from-sorted-array",
+          "[26][Easy][array][two-pointers]") {
     vector<pair<vector<int>, vector<int>>> tests = {
         {{}, {}},
         {{1}, {1}},

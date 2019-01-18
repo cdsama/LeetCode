@@ -9,19 +9,44 @@ from left to right, level by level).
 
 For example:
 Given binary tree [3,9,20,null,null,15,7],
+
     3
    / \
   9  20
     /  \
    15   7
+
 return its level order traversal as:
+
 [
   [3],
   [9,20],
   [15,7]
 ]
+
+Tags:
+    1. Tree
+    2. Breadth-first Search
+
+Similar Questions:
+    1. Binary Tree Zigzag Level Order Traversal
+    2. Binary Tree Level Order Traversal II
+    3. Minimum Depth of Binary Tree
+    4. Binary Tree Vertical Order Traversal
+    5. Average of Levels in Binary Tree
+    6. N-ary Tree Level Order Traversal
+
 */
 
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
 class Solution {
    public:
     vector<vector<int>> levelOrder(TreeNode* root) {
@@ -52,7 +77,8 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("binary-tree-level-order-traversal",
+          "[102][Medium][tree][breadth-first-search]") {
     Solution s;
     vector<vector<int>> ans = {{3}, {9, 20}, {15, 7}};
     CHECK(s.levelOrder(TREE(3, 9, 20, {}, {}, 15, 7)) == ans);

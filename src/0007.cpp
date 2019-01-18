@@ -23,6 +23,14 @@ Assume we are dealing with an environment which could only store integers within
 the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this
 problem, assume that your function returns 0 when the reversed integer
 overflows.
+
+Tags:
+    1. Math
+
+Similar Questions:
+    1. String to Integer (atoi)
+    2. Reverse Bits
+
 */
 
 class Solution {
@@ -38,7 +46,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("reverse-integer", "[7][Easy][math]") {
     Solution s;
     CHECK(s.reverse(123) == 321);
     CHECK(s.reverse(-123) == -321);

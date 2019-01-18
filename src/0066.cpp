@@ -23,6 +23,15 @@ Example 2:
     Output: [4,3,2,2]
     Explanation: The array represents the integer 4321.
 
+Tags:
+    1. Array
+    2. Math
+
+Similar Questions:
+    1. Multiply Strings
+    2. Add Binary
+    3. Plus One Linked List
+
 */
 
 class Solution {
@@ -43,7 +52,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("plus-one", "[66][Easy][array][math]") {
     Solution s;
     vector<pair<vector<int>, vector<int>>> tests = {
         {{1, 2, 3}, {1, 2, 4}},       {{4, 3, 2, 1}, {4, 3, 2, 2}},

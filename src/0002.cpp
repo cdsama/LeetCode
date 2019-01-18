@@ -13,11 +13,31 @@ number 0 itself.
 
 Example:
 
-    Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-    Output: 7 -> 0 -> 8
-    Explanation: 342 + 465 = 807.
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+
+Tags:
+    1. Linked List
+    2. Math
+
+Similar Questions:
+    1. Multiply Strings
+    2. Add Binary
+    3. Sum of Two Integers
+    4. Add Strings
+    5. Add Two Numbers II
+
 */
 
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
    public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
@@ -64,7 +84,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("add-two-numbers", "[2][Medium][linked-list][math]") {
     Solution s;
     CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
     CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));

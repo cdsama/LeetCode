@@ -11,8 +11,25 @@ Example:
     Input: 1->2->4, 1->3->4
     Output: 1->1->2->3->4->4
 
+Tags:
+    1. Linked List
+
+Similar Questions:
+    1. Merge k Sorted Lists
+    2. Merge Sorted Array
+    3. Sort List
+    4. Shortest Word Distance II
+
 */
 
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
    public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
@@ -40,7 +57,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("merge-two-sorted-lists", "[21][Easy][linked-list]") {
     Solution s;
     CHECK(ListEquals(s.mergeTwoLists(LIST(), LIST()), LIST()));
     CHECK(ListEquals(s.mergeTwoLists(LIST(1, 3, 5), LIST(2, 4, 6)),

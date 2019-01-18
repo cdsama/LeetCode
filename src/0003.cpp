@@ -1,4 +1,5 @@
 #include "LeetCode.hpp"
+
 /*
 3. Longest Substring Without Repeating Characters
 Medium
@@ -20,9 +21,20 @@ Example 3:
     Input: "pwwkew"
     Output: 3
     Explanation: The answer is "wke", with the length of 3.
-             Note that the answer must be a substring, "pwke" is a subsequence
-and not a substring.
+
+Note that the answer must be a substring, "pwke" is a subsequence and not a
+substring.
+
+Tags:
+    1. Hash Table
+    2. Two Pointers
+    3. String
+
+Similar Questions:
+    1. Longest Substring with At Most Two Distinct Characters
+
 */
+
 class Solution {
    public:
     int lengthOfLongestSubstring(string s) {
@@ -48,7 +60,8 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("longest-substring-without-repeating-characters",
+          "[3][Medium][hash-table][two-pointers][string]") {
     Solution s;
     CHECK(s.lengthOfLongestSubstring("") == 0);
     CHECK(s.lengthOfLongestSubstring("a") == 1);

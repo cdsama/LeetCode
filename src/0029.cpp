@@ -1,4 +1,3 @@
-
 #include "LeetCode.hpp"
 
 /*
@@ -28,6 +27,11 @@ Assume we are dealing with an environment which could only store integers within
 the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose of this
 problem, assume that your function returns 2^31 − 1 when the division result
 overflows.
+
+Tags:
+    1. Math
+    2. Binary Search
+
 */
 
 class Solution {
@@ -54,7 +58,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("divide-two-integers", "[29][Medium][math][binary-search]") {
     Solution s;
     CHECK(s.divide(10, 3) == 3);
     CHECK(s.divide(7, -3) == -2);

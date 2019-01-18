@@ -10,9 +10,22 @@ solution, and you may not use the same element twice.
 
 Example:
 
-    Given nums = [2, 7, 11, 15], target = 9,
-    Because nums[0] + nums[1] = 2 + 7 = 9,
-    return [0, 1].
+Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+Tags:
+    1. Array
+    2. Hash Table
+
+Similar Questions:
+    1. 3Sum
+    2. 4Sum
+    3. Two Sum II - Input array is sorted
+    4. Two Sum III - Data structure design
+    5. Subarray Sum Equals K
+    6. Two Sum IV - Input is a BST
+
 */
 
 class Solution {
@@ -33,7 +46,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("two-sum", "[1][Easy][array][hash-table]") {
     Solution s;
 
     std::vector<int> v1{2, 7, 11, 15};

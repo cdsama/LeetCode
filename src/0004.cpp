@@ -20,6 +20,11 @@ Example 2:
 
     The median is (2 + 3)/2 = 2.5
 
+Tags:
+    1. Array
+    2. Binary Search
+    3. Divide and Conquer
+
 */
 
 class Solution {
@@ -70,7 +75,8 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("median-of-two-sorted-arrays",
+          "[4][Hard][array][binary-search][divide-and-conquer]") {
     Solution s;
     vector<int> a, b;
     a = {1, 3};

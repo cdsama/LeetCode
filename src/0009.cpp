@@ -24,6 +24,16 @@ Example 3:
 
 Follow up:
 Coud you solve it without converting the integer to a string?
+
+Tags:
+    1. Math
+
+Similar Questions:
+    1. Palindrome Linked List
+
+Hint 1:
+Beware of overflow when you reverse the integer.
+
 */
 
 class Solution {
@@ -45,7 +55,7 @@ class Solution {
     }
 };
 
-TEST_CASE(TEST_NAME, TEST_TAGS) {
+TEST_CASE("palindrome-number", "[9][Easy][math]") {
     Solution s;
     CHECK(s.isPalindrome(123) == false);
     CHECK(s.isPalindrome(-123) == false);
