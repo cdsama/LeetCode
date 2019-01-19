@@ -77,7 +77,7 @@ add_problem(0029 Medium  divide-two-integers) # Divide Two Integers
 #add_problem(0041  Hard   first-missing-positive) # First Missing Positive
 #add_problem(0042  Hard   trapping-rain-water) # Trapping Rain Water
 #add_problem(0043 Medium  multiply-strings) # Multiply Strings
-#add_problem(0044  Hard   wildcard-matching) # Wildcard Matching
+add_problem(0044  Hard   wildcard-matching) # Wildcard Matching
 #add_problem(0045  Hard   jump-game-ii) # Jump Game II
 #add_problem(0046 Medium  permutations) # Permutations
 #add_problem(0047 Medium  permutations-ii) # Permutations II
@@ -169,7 +169,7 @@ add_problem(0104  Easy   maximum-depth-of-binary-tree) # Maximum Depth of Binary
 #add_problem(0133 Medium  clone-graph) # Clone Graph
 #add_problem(0134 Medium  gas-station) # Gas Station
 #add_problem(0135  Hard   candy) # Candy
-# add_problem(0136  Easy   single-number) # Single Number
+add_problem(0136  Easy   single-number) # Single Number
 # #add_problem(0137 Medium  single-number-ii) # Single Number II
 # #add_problem(0138 Medium  copy-list-with-random-pointer) # Copy List with Random Pointer
 # #add_problem(0139 Medium  word-break) # Word Break
