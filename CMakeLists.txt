@@ -214,7 +214,7 @@ add_problem(0136  Easy   single-number) # Single Number
 # #add_problem(0188  Hard   best-time-to-buy-and-sell-stock-iv) # Best Time to Buy and Sell Stock IV
 # #add_problem(0189  Easy   rotate-array) # Rotate Array
 # #add_problem(0190  Easy   reverse-bits) # Reverse Bits
-# add_problem(0191  Easy   number-of-1-bits) # Number of 1 Bits
+add_problem(0191  Easy   number-of-1-bits) # Number of 1 Bits
 # #add_problem(0198  Easy   house-robber) # House Robber
 # #add_problem(0199 Medium  binary-tree-right-side-view) # Binary Tree Right Side View
 # #add_problem(0200 Medium  number-of-islands) # Number of Islands
