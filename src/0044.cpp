@@ -69,7 +69,7 @@ Similar Questions:
 
 */
 
-class Solution {
+class Solution {  // Backtracking & Greedy
    public:
     bool isMatch(string s, string p) {
         size_t ss = s.size();
@@ -98,12 +98,65 @@ class Solution {
     }
 };
 
+void printtable(vector<vector<bool>>& dp, const string& s, const string& p) {
+    cout << "    ";
+    for (const auto& c : p) {
+        cout << c << " ";
+    }
+    cout << endl;
+    int i = -1;
+    for (const auto& m : dp) {
+        cout << (i == -1 ? (i++, ' ') : s[i++]) << " ";
+        for (const auto& n : m) {
+            cout << n << " ";
+        }
+        cout << endl;
+    }
+}
+
+class Solution2 {  // DP
+   public:
+    bool isMatch(string s, string p) {
+        // cout << "------" << endl;
+        int m = s.size(), n = p.size();
+        vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
+        dp[0][0] = true;
+        for (int i = 1; i <= n; ++i) {
+            if (p[i - 1] == '*') {
+                dp[0][i] = dp[0][i - 1];
+            }
+        }
+        for (int i = 1; i <= m; ++i) {
+            for (int j = 1; j <= n; ++j) {
+                if (p[j - 1] == '*') {
+                    dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
+                } else {
+                    dp[i][j] = (s[i - 1] == p[j - 1] || p[j - 1] == '?') &&
+                               dp[i - 1][j - 1];
+                }
+            }
+        }
+        // printtable(dp, s, p);
+        return dp[m][n];
+    }
+};
+
 TEST_CASE("wildcard-matching",
           "[44][Hard][string][dynamic-programming][backtracking][greedy]") {
-    Solution s;
-    CHECK(s.isMatch("aa", "a") == false);
-    CHECK(s.isMatch("aa", "*") == true);
-    CHECK(s.isMatch("cb", "?a") == false);
-    CHECK(s.isMatch("adceb", "*a*b") == true);
-    CHECK(s.isMatch("acdcb", "a*c?b") == false);
+    {
+        Solution s;
+        CHECK(s.isMatch("aa", "a") == false);
+        CHECK(s.isMatch("aa", "*") == true);
+        CHECK(s.isMatch("cb", "?a") == false);
+        CHECK(s.isMatch("adceb", "*a*b") == true);
+        CHECK(s.isMatch("acdcb", "a*c?b") == false);
+    }
+    {
+        Solution2 s;
+        CHECK(s.isMatch("aa", "a") == false);
+        CHECK(s.isMatch("aa", "*") == true);
+        CHECK(s.isMatch("cb", "?a") == false);
+        CHECK(s.isMatch("adceb", "*a*b") == true);
+        CHECK(s.isMatch("acdcb", "a*c?b") == false);
+    }
 }
