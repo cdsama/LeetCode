@@ -100,7 +100,7 @@ add_problem(0044  Hard   wildcard-matching) # Wildcard Matching
 #add_problem(0064 Medium  minimum-path-sum) # Minimum Path Sum
 add_problem(0065  Hard   valid-number) # Valid Number
 add_problem(0066  Easy   plus-one) # Plus One
-#add_problem(0067  Easy   add-binary) # Add Binary
+add_problem(0067  Easy   add-binary) # Add Binary
 #add_problem(0068  Hard   text-justification) # Text Justification
 #add_problem(0069  Easy   sqrtx) # Sqrt(x)
 #add_problem(0070  Easy   climbing-stairs) # Climbing Stairs
