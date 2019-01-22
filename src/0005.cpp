@@ -81,7 +81,7 @@ class Solution {  // travel O(n^2) 4ms
                     }
                 }
                 if (even) {
-                    if ((s[eleft] == s[right])) {
+                    if (s[eleft] == s[right]) {
                         if (int l = (right - eleft + 1); l > length_max) {
                             length_max = l;
                             left_max = eleft;
