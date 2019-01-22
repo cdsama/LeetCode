@@ -4,19 +4,19 @@
 5. Longest Palindromic Substring
 Medium
 
-Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
-Example 1:
+Given a string s, find the longest palindromic substring in s. You may assume
+that the maximum length of s is 1000.
 
-Input: "babad"
-Output: "bab"
-Note: "aba" is also a valid answer.
+Example 1:
+    Input: "babad"
+    Output: "bab"
+    Note: "aba" is also a valid answer.
 
 Example 2:
+    Input: "cbbd"
+    Output: "bb"
 
-Input: "cbbd"
-Output: "bb"
-
-Tags: 
+Tags:
     1. String
     2. Dynamic Programming
 
@@ -28,26 +28,91 @@ Similar Questions:
     5. Palindromic Substrings
 
 Hint 1:
-How can we reuse a previously computed palindrome to compute a larger palindrome?
+How can we reuse a previously computed palindrome to compute a larger
+palindrome?
 
 Hint 2:
-If “aba” is a palindrome, is “xabax” and palindrome? Similarly is “xabay” a palindrome?
+If “aba” is a palindrome, is “xabax” and palindrome? Similarly is “xabay” a
+palindrome?
 
 Hint 3:
 Complexity based hint:
-If we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation.
+If we use brute-force and check whether for every start and end position a
+substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic
+checks. Can we reduce the time for palindromic checks to O(1) by reusing some
+previous computation.
 
 */
 
-class Solution {
-public:
+class Solution {  // travel O(n^2)
+   public:
     string longestPalindrome(string s) {
-        
+        int size = static_cast<int>(s.size());
+        if (size < 2) {
+            return s;
+        } else if (size == 2) {
+            if (s[0] == s[1]) {
+                return s;
+            } else {
+                return s.substr(0, 1);
+            }
+        }
+        int left_max = 0;
+        int right_max = 0;
+        int length_max = 1;
+        for (int i = 0; i < size; ++i) {
+            bool odd = true;
+            bool even = true;
+            if (min(i + 1, size - i) * 2 <= length_max) {
+                continue;
+            }
+            for (int eleft = i, right = i + 1; (eleft >= 0) && (right < size);
+                 --eleft, ++right) {
+                if (odd) {
+                    int left = eleft - 1;
+                    if ((left >= 0) && (s[left] == s[right])) {
+                        if (int l = (right - left + 1); l > length_max) {
+                            length_max = l;
+                            left_max = left;
+                            right_max = right;
+                        }
+                    } else {
+                        odd = false;
+                    }
+                }
+                if (even) {
+                    if ((s[eleft] == s[right])) {
+                        if (int l = (right - eleft + 1); l > length_max) {
+                            length_max = l;
+                            left_max = eleft;
+                            right_max = right;
+                        }
+                    } else {
+                        even = false;
+                    }
+                }
+                if (!(odd || even)) {
+                    break;
+                }
+            }
+        }
+        return s.substr(left_max, length_max);
     }
 };
 
-TEST_CASE("longest-palindromic-substring", "[5][Medium][string][dynamic-programming]") {
-    //TODO
-    CHECK(true);
+TEST_CASE("longest-palindromic-substring",
+          "[5][Medium][string][dynamic-programming]") {
+    {
+        Solution s;
+        CHECK(s.longestPalindrome("") == "");
+        CHECK(s.longestPalindrome("a") == "a");
+        CHECK(s.longestPalindrome("aa") == "aa");
+        CHECK(s.longestPalindrome("ab") == "a");
+        CHECK(s.longestPalindrome("aaa") == "aaa");
+        CHECK(s.longestPalindrome("aab") == "aa");
+        CHECK(s.longestPalindrome("babad") == "bab");
+        CHECK(s.longestPalindrome("cbbd") == "bb");
+        CHECK(s.longestPalindrome("yrtuisabcdefgfedcbarkejhgb") ==
+              "abcdefgfedcba");
+    }
 }
-

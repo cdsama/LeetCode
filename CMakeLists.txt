@@ -38,7 +38,7 @@ add_problem(0001  Easy  two-sum) # Two Sum
 add_problem(0002 Medium add-two-numbers) # Add Two Numbers
 add_problem(0003 Medium longest-substring-without-repeating-characters) # Longest Substring Without Repeating Characters
 add_problem(0004  Hard  median-of-two-sorted-arrays) # Median of Two Sorted Arrays
-#add_problem(0005 Medium longest-palindromic-substring) # Longest Palindromic Substring
+add_problem(0005 Medium longest-palindromic-substring) # Longest Palindromic Substring
 add_problem(0006 Medium zigzag-conversion) # ZigZag Conversion
 add_problem(0007  Easy  reverse-integer) # Reverse Integer
 #add_problem(0008 Medium string-to-integer-atoi) # String to Integer (atoi)
