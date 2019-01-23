@@ -58,7 +58,6 @@ class Solution {  // travel O(n^2) 4ms
             }
         }
         int left_max = 0;
-        int right_max = 0;
         int length_max = 1;
         for (int i = 0; i < size; ++i) {
             bool odd = true;
@@ -74,7 +73,6 @@ class Solution {  // travel O(n^2) 4ms
                         if (int l = (right - left + 1); l > length_max) {
                             length_max = l;
                             left_max = left;
-                            right_max = right;
                         }
                     } else {
                         odd = false;
@@ -85,7 +83,6 @@ class Solution {  // travel O(n^2) 4ms
                         if (int l = (right - eleft + 1); l > length_max) {
                             length_max = l;
                             left_max = eleft;
-                            right_max = right;
                         }
                     } else {
                         even = false;
@@ -116,7 +113,6 @@ class Solution2 {  // DP O(n^2) 28ms
         int dpsize = size * size * sizeof(bool);
         bool* dp = (bool*)alloca(dpsize);
         int left_max = 0;
-        int right_max = 0;
         int length_max = 1;
         int l = 0;
         for (int i = 0; i < size; ++i) {
@@ -127,7 +123,6 @@ class Solution2 {  // DP O(n^2) 28ms
                     dp[j * size + i] && (l = i - j + 1) > length_max) {
                     length_max = l;
                     left_max = j;
-                    right_max = i;
                 }
             }
             dp[i * size + i] = true;
