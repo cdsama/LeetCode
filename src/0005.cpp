@@ -131,6 +131,54 @@ class Solution2 {  // DP O(n^2) 28ms
     }
 };
 
+class Solution3 {  // Manacher's Algorithm O(n) 0ms
+   public:
+    string longestPalindrome(string s) {
+        int size = static_cast<int>(s.size());
+        if (size < 2) {
+            return s;
+        } else if (size == 2) {
+            if (s[0] == s[1]) {
+                return s;
+            } else {
+                return s.substr(0, 1);
+            }
+        }
+        int n = size * 2 + 2;
+        string t = "^|";
+        t.reserve(n);
+        for (auto c : s) {
+            t.push_back(c);
+            t.push_back('|');
+        }
+        std::vector<int> p(n, 0);
+        int center = 0, radius = 0;
+        for (int i = 1; i < n - 1; ++i) {
+            if (radius > i) {
+                p[i] = min(radius - i, p[center * 2 - i]);
+            } else {
+                p[i] = 0;
+            }
+            while (t[(i + 1 + p[i])] == t[(i - 1 - p[i])]) {
+                p[i]++;
+            }
+            if (i + p[i] > radius) {
+                center = i;
+                radius = i + p[i];
+            }
+        }
+        int maxLen = 0;
+        int centerIndex = 0;
+        for (int i = 1; i < n - 1; i++) {
+            if (p[i] > maxLen) {
+                maxLen = p[i];
+                centerIndex = i;
+            }
+        }
+        return s.substr((centerIndex - maxLen) / 2, maxLen);
+    }
+};
+
 TEST_CASE("longest-palindromic-substring",
           "[5][Medium][string][dynamic-programming]") {
     {
@@ -148,6 +196,19 @@ TEST_CASE("longest-palindromic-substring",
     }
     {
         Solution2 s;
+        CHECK(s.longestPalindrome("") == "");
+        CHECK(s.longestPalindrome("a") == "a");
+        CHECK(s.longestPalindrome("aa") == "aa");
+        CHECK(s.longestPalindrome("ab") == "a");
+        CHECK(s.longestPalindrome("aaa") == "aaa");
+        CHECK(s.longestPalindrome("aab") == "aa");
+        CHECK(s.longestPalindrome("babad") == "bab");
+        CHECK(s.longestPalindrome("cbbd") == "bb");
+        CHECK(s.longestPalindrome("yrtuisabcdefgfedcbarkejhgb") ==
+              "abcdefgfedcba");
+    }
+    {
+        Solution3 s;
         CHECK(s.longestPalindrome("") == "");
         CHECK(s.longestPalindrome("a") == "a");
         CHECK(s.longestPalindrome("aa") == "aa");
