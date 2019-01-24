@@ -2,6 +2,8 @@
 
 ## C++ solutions
 
+[![Build Status](https://travis-ci.org/cdsama/LeetCode.svg?branch=master)](https://travis-ci.org/cdsama/LeetCode)
+
 ### Environment
 
 0. cmake
