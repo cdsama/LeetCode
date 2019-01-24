@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include <algorithm>
 #include <catch2/catch.hpp>
+#include <climits>
 #include <deque>
 #include <iostream>
 #include <map>
