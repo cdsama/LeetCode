@@ -118,7 +118,8 @@ class Solution2 {  // DP
    public:
     bool isMatch(string s, string p) {
         // cout << "------" << endl;
-        int m = s.size(), n = p.size();
+        int m = static_cast<int>(s.size());
+        int n = static_cast<int>(p.size());
         vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
         dp[0][0] = true;
         for (int i = 1; i <= n; ++i) {
