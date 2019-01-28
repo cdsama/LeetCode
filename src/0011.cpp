@@ -31,12 +31,9 @@ class Solution {
     int maxArea(vector<int>& height) {
         int area = 0;
         int size = static_cast<int>(height.size());
-        for (size_t i = 0; i < size - 1; ++i) {
-            for (size_t j = i + 1; j < size; ++j) {
-                int a = static_cast<int>(min(height[i], height[j]) * (j - i));
-                if (a > area) {
-                    area = a;
-                }
+        for (int i = 0; i < size - 1; ++i) {
+            for (int j = i + 1; j < size; ++j) {
+                area = max(min(height[i], height[j]) * (j - i), area);
             }
         }
         return area;
