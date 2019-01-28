@@ -985,3 +985,7 @@ add_problem(0258  Easy  add-digits) # Add Digits
 # add_problem(0978 Medium longest-turbulent-subarray) # Longest Turbulent Subarray
 # add_problem(0979 Medium distribute-coins-in-binary-tree) # Distribute Coins in Binary Tree
 # add_problem(0980  Hard  unique-paths-iii) # Unique Paths III
+# add_problem(0981 Medium time-based-key-value-store) # Time Based Key-Value Store
+# add_problem(0982  Hard  triples-with-bitwise-and-equal-to-zero) # Triples with Bitwise AND Equal To Zero
+# add_problem(0983 Medium minimum-cost-for-tickets) # Minimum Cost For Tickets
+# add_problem(0984  Easy  string-without-aaa-or-bbb) # String Without AAA or BBB
