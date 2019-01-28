@@ -111,11 +111,11 @@ class Solution2 {
             for (size_t j = 1; j <= n; ++j) {
                 bool temp = dp[j];
                 if (p[j - 1] == '*') {
-                    dp[j] = ((dp[j - 2] == 1) ||
-                             (i > 0 && dp[j] == 1 &&
+                    dp[j] = (dp[j - 2]  ||
+                             (i > 0 && dp[j]  &&
                               (s[i - 1] == p[j - 2] || p[j - 2] == '.')));
                 } else {
-                    dp[j] = (i > 0 && pre == 1 &&
+                    dp[j] = (i > 0 && pre &&
                              (s[i - 1] == p[j - 1] || p[j - 1] == '.'));
                 }
                 pre = temp;
