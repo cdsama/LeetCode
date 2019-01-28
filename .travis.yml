@@ -31,3 +31,4 @@ script:
 cache:
   directories:
   - vcpkg
+  - build
