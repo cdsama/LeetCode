@@ -41,7 +41,7 @@ add_problem(0004  Hard  median-of-two-sorted-arrays) # Median of Two Sorted Arra
 add_problem(0005 Medium longest-palindromic-substring) # Longest Palindromic Substring
 add_problem(0006 Medium zigzag-conversion) # ZigZag Conversion
 add_problem(0007  Easy  reverse-integer) # Reverse Integer
-#add_problem(0008 Medium string-to-integer-atoi) # String to Integer (atoi)
+add_problem(0008 Medium string-to-integer-atoi) # String to Integer (atoi)
 add_problem(0009  Easy  palindrome-number) # Palindrome Number
 #add_problem(0010  Hard  regular-expression-matching) # Regular Expression Matching
 #add_problem(0011 Medium container-with-most-water) # Container With Most Water
