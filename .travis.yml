@@ -21,7 +21,7 @@ install:
   - vcpkg install catch2
 
 script:
-  - mkdir build
+  -  mkdir build | echo exist
   - cd build
   - cmake -D CMAKE_BUILD_TYPE:STRING=Debug ..
   - cmake --build ./ -j 8
