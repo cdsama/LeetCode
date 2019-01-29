@@ -50,7 +50,7 @@ add_problem(0013  Easy  roman-to-integer) # Roman to Integer
 add_problem(0014  Easy  longest-common-prefix) # Longest Common Prefix
 add_problem(0015 Medium 3sum) # 3Sum
 add_problem(0016 Medium 3sum-closest) # 3Sum Closest
-#add_problem(0017 Medium letter-combinations-of-a-phone-number) # Letter Combinations of a Phone Number
+add_problem(0017 Medium letter-combinations-of-a-phone-number) # Letter Combinations of a Phone Number
 #add_problem(0018 Medium 4sum) # 4Sum
 #add_problem(0019 Medium remove-nth-node-from-end-of-list) # Remove Nth Node From End of List
 add_problem(0020  Easy  valid-parentheses) # Valid Parentheses
