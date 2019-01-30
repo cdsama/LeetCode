@@ -39,39 +39,58 @@ class Solution {
         }
         sort(nums.begin(), nums.end());
         size_t count = nums.size();
-        std::unordered_map<int, set<pair<size_t, size_t>>> cache;
+        std::unordered_map<int, vector<pair<size_t, size_t>>> cache;
         for (size_t i = 0; i < count - 1; ++i) {
             for (size_t j = i + 1; j < count; ++j) {
-                cache[target - nums[i] - nums[j]].insert({i, j});
+                int index = target - nums[i] - nums[j];
+                auto& cache_index = cache[index];
+                cache_index.push_back({i, j});
             }
         }
-
         for (size_t i = 0; i < count - 1; ++i) {
             for (size_t j = i + 1; j < count; ++j) {
                 int temp = nums[i] + nums[j];
                 auto& res = cache[temp];
-                for (auto itr = res.begin(); itr != res.end();) {
+                for (auto itr = res.begin(); itr != res.end(); ++itr) {
                     if (itr->first != i && itr->first != j &&
-                        itr->second != i && itr->second != j) {
+                        itr->second != i && itr->second != j &&
+                        (i < j && j < itr->first && itr->first < itr->second)) {
                         ret.push_back({nums[i], nums[j], nums[itr->first],
                                        nums[itr->second]});
-                        itr = res.erase(itr);
-                        cache[target - temp].erase({i, j});
-                    } else {
-                        ++itr;
                     }
                 }
             }
         }
-
         return ret;
     }
 };
 
+set<vector<int>> convert(vector<vector<int>> v) {
+    set<vector<int>> s;
+    for (auto&& i : v) {
+        sort(i.begin(), i.end());
+        s.insert(i);
+    }
+    return s;
+}
+
 TEST_CASE("4sum", "[18][Medium][array][hash-table][two-pointers]") {
     Solution s;
-    vector<vector<int>> key = {{-1, 0, 0, 1}, {-2, -1, 1, 2}, {-2, 0, 0, 2}};
-    vector<int> nums = {1, 0, -1, 0, -2, 2};
-    vector<vector<int>> ans = s.fourSum(nums, 0);
-    CHECK(key == ans);
+    {
+        vector<vector<int>> key = {
+            {-1, 0, 0, 1}, {-2, -1, 1, 2}, {-2, 0, 0, 2}};
+        vector<int> nums = {1, 0, -1, 0, -2, 2};
+        vector<vector<int>> ans = s.fourSum(nums, 0);
+        CHECK(key.size() == ans.size());
+        CHECK(convert(key) == convert(ans));
+    }
+    {
+        vector<vector<int>> key = {
+            {-3, -2, 2, 3}, {-3, -1, 1, 3}, {-3, 0, 0, 3}, {-3, 0, 1, 2},
+            {-2, -1, 0, 3}, {-2, -1, 1, 2}, {-2, 0, 0, 2}, {-1, 0, 0, 1}};
+        vector<int> nums = {-3, -2, -1, 0, 0, 1, 2, 3};
+        vector<vector<int>> ans = s.fourSum(nums, 0);
+        CHECK(key.size() == ans.size());
+        CHECK(convert(key) == convert(ans));
+    }
 }
