@@ -989,3 +989,43 @@ add_problem(0258  Easy  add-digits) # Add Digits
 # add_problem(0982  Hard  triples-with-bitwise-and-equal-to-zero) # Triples with Bitwise AND Equal To Zero
 # add_problem(0983 Medium minimum-cost-for-tickets) # Minimum Cost For Tickets
 # add_problem(0984  Easy  string-without-aaa-or-bbb) # String Without AAA or BBB
+# add_problem(0985  Easy  sum-of-even-numbers-after-queries) # Sum of Even Numbers After Queries
+# add_problem(0986 Medium interval-list-intersections) # Interval List Intersections
+# add_problem(0987 Medium vertical-order-traversal-of-a-binary-tree) # Vertical Order Traversal of a Binary Tree
+# add_problem(0988 Medium smallest-string-starting-from-leaf) # Smallest String Starting From Leaf
+# add_problem(0989  Easy  add-to-array-form-of-integer) # Add to Array-Form of Integer
+# add_problem(0990 Medium satisfiability-of-equality-equations) # Satisfiability of Equality Equations
+# add_problem(0991 Medium broken-calculator) # Broken Calculator
+# add_problem(0992  Hard  subarrays-with-k-different-integers) # Subarrays with K Different Integers
+# add_problem(0993  Easy  cousins-in-binary-tree) # Cousins in Binary Tree
+# add_problem(0994  Easy  rotting-oranges) # Rotting Oranges
+# add_problem(0995  Hard  minimum-number-of-k-consecutive-bit-flips) # Minimum Number of K Consecutive Bit Flips
+# add_problem(0996  Hard  number-of-squareful-arrays) # Number of Squareful Arrays
+# add_problem(0997  Easy  find-the-town-judge) # Find the Town Judge
+# add_problem(0998 Medium maximum-binary-tree-ii) # Maximum Binary Tree II
+# add_problem(0999  Easy  available-captures-for-rook) # Available Captures for Rook
+# add_problem(1000  Hard  minimum-cost-to-merge-stones) # Minimum Cost to Merge Stones
+# add_problem(1001  Hard  grid-illumination) # Grid Illumination
+# add_problem(1002  Easy  find-common-characters) # Find Common Characters
+# add_problem(1003 Medium check-if-word-is-valid-after-substitutions) # Check If Word Is Valid After Substitutions
+# add_problem(1004 Medium max-consecutive-ones-iii) # Max Consecutive Ones III
+# add_problem(1005  Easy  maximize-sum-of-array-after-k-negations) # Maximize Sum Of Array After K Negations
+# add_problem(1006 Medium clumsy-factorial) # Clumsy Factorial
+# add_problem(1007 Medium minimum-domino-rotations-for-equal-row) # Minimum Domino Rotations For Equal Row
+# add_problem(1008 Medium construct-binary-search-tree-from-preorder-traversal) # Construct Binary Search Tree from Preorder Traversal
+# add_problem(1009  Easy  complement-of-base-10-integer) # Complement of Base 10 Integer
+# add_problem(1010  Easy  pairs-of-songs-with-total-durations-divisible-by-60) # Pairs of Songs With Total Durations Divisible by 60
+# add_problem(1011 Medium capacity-to-ship-packages-within-d-days) # Capacity To Ship Packages Within D Days
+# add_problem(1012  Hard  numbers-with-repeated-digits) # Numbers With Repeated Digits
+# add_problem(1013  Easy  partition-array-into-three-parts-with-equal-sum) # Partition Array Into Three Parts With Equal Sum
+# add_problem(1014 Medium best-sightseeing-pair) # Best Sightseeing Pair
+# add_problem(1015 Medium smallest-integer-divisible-by-k) # Smallest Integer Divisible by K
+# add_problem(1016 Medium binary-string-with-substrings-representing-1-to-n) # Binary String With Substrings Representing 1 To N
+# add_problem(1017 Medium convert-to-base-2) # Convert to Base -2
+# add_problem(1018  Easy  binary-prefix-divisible-by-5) # Binary Prefix Divisible By 5
+# add_problem(1019 Medium next-greater-node-in-linked-list) # Next Greater Node In Linked List
+# add_problem(1020 Medium number-of-enclaves) # Number of Enclaves
+# add_problem(1021  Easy  remove-outermost-parentheses) # Remove Outermost Parentheses
+# add_problem(1022  Easy  sum-of-root-to-leaf-binary-numbers) # Sum of Root To Leaf Binary Numbers
+# add_problem(1023 Medium camelcase-matching) # Camelcase Matching
+# add_problem(1024 Medium video-stitching) # Video Stitching
