@@ -917,6 +917,7 @@ add_problem(0258  Easy  add-digits) # Add Digits
 # add_problem(0909 Medium snakes-and-ladders) # Snakes and Ladders
 # add_problem(0910 Medium smallest-range-ii) # Smallest Range II
 # add_problem(0911 Medium online-election) # Online Election
+# add_problem(0912 Medium sort-an-array) # Sort an Array
 # add_problem(0913  Hard  cat-and-mouse) # Cat and Mouse
 # add_problem(0914  Easy  x-of-a-kind-in-a-deck-of-cards) # X of a Kind in a Deck of Cards
 # add_problem(0915 Medium partition-array-into-disjoint-intervals) # Partition Array into Disjoint Intervals
@@ -1029,3 +1030,99 @@ add_problem(0258  Easy  add-digits) # Add Digits
 # add_problem(1022  Easy  sum-of-root-to-leaf-binary-numbers) # Sum of Root To Leaf Binary Numbers
 # add_problem(1023 Medium camelcase-matching) # Camelcase Matching
 # add_problem(1024 Medium video-stitching) # Video Stitching
+# add_problem(1025  Easy  divisor-game) # Divisor Game
+# add_problem(1026 Medium maximum-difference-between-node-and-ancestor) # Maximum Difference Between Node and Ancestor
+# add_problem(1027 Medium longest-arithmetic-sequence) # Longest Arithmetic Sequence
+# add_problem(1028  Hard  recover-a-tree-from-preorder-traversal) # Recover a Tree From Preorder Traversal
+# add_problem(1029  Easy  two-city-scheduling) # Two City Scheduling
+# add_problem(1030  Easy  matrix-cells-in-distance-order) # Matrix Cells in Distance Order
+# add_problem(1031 Medium maximum-sum-of-two-non-overlapping-subarrays) # Maximum Sum of Two Non-Overlapping Subarrays
+# add_problem(1032  Hard  stream-of-characters) # Stream of Characters
+# add_problem(1033  Easy  moving-stones-until-consecutive) # Moving Stones Until Consecutive
+# add_problem(1034 Medium coloring-a-border) # Coloring A Border
+# add_problem(1035 Medium uncrossed-lines) # Uncrossed Lines
+# add_problem(1036  Hard  escape-a-large-maze) # Escape a Large Maze
+# add_problem(1037  Easy  valid-boomerang) # Valid Boomerang
+# add_problem(1038 Medium binary-search-tree-to-greater-sum-tree) # Binary Search Tree to Greater Sum Tree
+# add_problem(1039 Medium minimum-score-triangulation-of-polygon) # Minimum Score Triangulation of Polygon
+# add_problem(1040 Medium moving-stones-until-consecutive-ii) # Moving Stones Until Consecutive II
+# add_problem(1041 Medium robot-bounded-in-circle) # Robot Bounded In Circle
+# add_problem(1042  Easy  flower-planting-with-no-adjacent) # Flower Planting With No Adjacent
+# add_problem(1043 Medium partition-array-for-maximum-sum) # Partition Array for Maximum Sum
+# add_problem(1044  Hard  longest-duplicate-substring) # Longest Duplicate Substring
+# add_problem(1046  Easy  last-stone-weight) # Last Stone Weight
+# add_problem(1047  Easy  remove-all-adjacent-duplicates-in-string) # Remove All Adjacent Duplicates In String
+# add_problem(1048 Medium longest-string-chain) # Longest String Chain
+# add_problem(1049 Medium last-stone-weight-ii) # Last Stone Weight II
+# add_problem(1051  Easy  height-checker) # Height Checker
+# add_problem(1052 Medium grumpy-bookstore-owner) # Grumpy Bookstore Owner
+# add_problem(1053 Medium previous-permutation-with-one-swap) # Previous Permutation With One Swap
+# add_problem(1054 Medium distant-barcodes) # Distant Barcodes
+# add_problem(1071  Easy  greatest-common-divisor-of-strings) # Greatest Common Divisor of Strings
+# add_problem(1072 Medium flip-columns-for-maximum-number-of-equal-rows) # Flip Columns For Maximum Number of Equal Rows
+# add_problem(1073 Medium adding-two-negabinary-numbers) # Adding Two Negabinary Numbers
+# add_problem(1074  Hard  number-of-submatrices-that-sum-to-target) # Number of Submatrices That Sum to Target
+# add_problem(1078  Easy  occurrences-after-bigram) # Occurrences After Bigram
+# add_problem(1079 Medium letter-tile-possibilities) # Letter Tile Possibilities
+# add_problem(1080 Medium insufficient-nodes-in-root-to-leaf-paths) # Insufficient Nodes in Root to Leaf Paths
+# add_problem(1081 Medium smallest-subsequence-of-distinct-characters) # Smallest Subsequence of Distinct Characters
+# add_problem(1089  Easy  duplicate-zeros) # Duplicate Zeros
+# add_problem(1090 Medium largest-values-from-labels) # Largest Values From Labels
+# add_problem(1091 Medium shortest-path-in-binary-matrix) # Shortest Path in Binary Matrix
+# add_problem(1092  Hard  shortest-common-supersequence) # Shortest Common Supersequence 
+# add_problem(1093 Medium statistics-from-a-large-sample) # Statistics from a Large Sample
+# add_problem(1094 Medium car-pooling) # Car Pooling
+# add_problem(1095  Hard  find-in-mountain-array) # Find in Mountain Array
+# add_problem(1096  Hard  brace-expansion-ii) # Brace Expansion II
+# add_problem(1103  Easy  distribute-candies-to-people) # Distribute Candies to People
+# add_problem(1104 Medium path-in-zigzag-labelled-binary-tree) # Path In Zigzag Labelled Binary Tree
+# add_problem(1105 Medium filling-bookcase-shelves) # Filling Bookcase Shelves
+# add_problem(1106  Hard  parsing-a-boolean-expression) # Parsing A Boolean Expression
+# add_problem(1108  Easy  defanging-an-ip-address) # Defanging an IP Address
+# add_problem(1109 Medium corporate-flight-bookings) # Corporate Flight Bookings
+# add_problem(1110 Medium delete-nodes-and-return-forest) # Delete Nodes And Return Forest
+# add_problem(1111 Medium maximum-nesting-depth-of-two-valid-parentheses-strings) # Maximum Nesting Depth of Two Valid Parentheses Strings
+# add_problem(1122  Easy  relative-sort-array) # Relative Sort Array
+# add_problem(1123 Medium lowest-common-ancestor-of-deepest-leaves) # Lowest Common Ancestor of Deepest Leaves
+# add_problem(1124 Medium longest-well-performing-interval) # Longest Well-Performing Interval
+# add_problem(1125  Hard  smallest-sufficient-team) # Smallest Sufficient Team
+# add_problem(1128  Easy  number-of-equivalent-domino-pairs) # Number of Equivalent Domino Pairs
+# add_problem(1129 Medium shortest-path-with-alternating-colors) # Shortest Path with Alternating Colors
+# add_problem(1130 Medium minimum-cost-tree-from-leaf-values) # Minimum Cost Tree From Leaf Values
+# add_problem(1131 Medium maximum-of-absolute-value-expression) # Maximum of Absolute Value Expression
+# add_problem(1137  Easy  n-th-tribonacci-number) # N-th Tribonacci Number
+# add_problem(1138 Medium alphabet-board-path) # Alphabet Board Path
+# add_problem(1139 Medium largest-1-bordered-square) # Largest 1-Bordered Square
+# add_problem(1140 Medium stone-game-ii) # Stone Game II
+# add_problem(1143 Medium longest-common-subsequence) # Longest Common Subsequence
+# add_problem(1144 Medium decrease-elements-to-make-array-zigzag) # Decrease Elements To Make Array Zigzag
+# add_problem(1145 Medium binary-tree-coloring-game) # Binary Tree Coloring Game
+# add_problem(1146 Medium snapshot-array) # Snapshot Array
+# add_problem(1147  Hard  longest-chunked-palindrome-decomposition) # Longest Chunked Palindrome Decomposition
+# add_problem(1154  Easy  day-of-the-year) # Day of the Year
+# add_problem(1155 Medium number-of-dice-rolls-with-target-sum) # Number of Dice Rolls With Target Sum
+# add_problem(1156 Medium swap-for-longest-repeated-character-substring) # Swap For Longest Repeated Character Substring
+# add_problem(1157  Hard  online-majority-element-in-subarray) # Online Majority Element In Subarray
+# add_problem(1160  Easy  find-words-that-can-be-formed-by-characters) # Find Words That Can Be Formed by Characters
+# add_problem(1161 Medium maximum-level-sum-of-a-binary-tree) # Maximum Level Sum of a Binary Tree
+# add_problem(1162 Medium as-far-from-land-as-possible) # As Far from Land as Possible
+# add_problem(1163  Hard  last-substring-in-lexicographical-order) # Last Substring in Lexicographical Order
+# add_problem(1169 Medium invalid-transactions) # Invalid Transactions
+# add_problem(1170  Easy  compare-strings-by-frequency-of-the-smallest-character) # Compare Strings by Frequency of the Smallest Character
+# add_problem(1171 Medium remove-zero-sum-consecutive-nodes-from-linked-list) # Remove Zero Sum Consecutive Nodes from Linked List
+# add_problem(1172  Hard  dinner-plate-stacks) # Dinner Plate Stacks
+# add_problem(1175  Easy  prime-arrangements) # Prime Arrangements
+# add_problem(1177 Medium can-make-palindrome-from-substring) # Can Make Palindrome from Substring
+# add_problem(1178  Hard  number-of-valid-words-for-each-puzzle) # Number of Valid Words for Each Puzzle
+# add_problem(1184  Easy  distance-between-bus-stops) # Distance Between Bus Stops
+# add_problem(1185  Easy  day-of-the-week) # Day of the Week
+# add_problem(1186 Medium maximum-subarray-sum-with-one-deletion) # Maximum Subarray Sum with One Deletion
+# add_problem(1187  Hard  make-array-strictly-increasing) # Make Array Strictly Increasing
+# add_problem(1189  Easy  maximum-number-of-balloons) # Maximum Number of Balloons
+# add_problem(1190 Medium reverse-substrings-between-each-pair-of-parentheses) # Reverse Substrings Between Each Pair of Parentheses
+# add_problem(1191 Medium k-concatenation-maximum-sum) # K-Concatenation Maximum Sum
+# add_problem(1192  Hard  critical-connections-in-a-network) # Critical Connections in a Network
+# add_problem(1200  Easy  minimum-absolute-difference) # Minimum Absolute Difference
+# add_problem(1201 Medium ugly-number-iii) # Ugly Number III
+# add_problem(1202 Medium smallest-string-with-swaps) # Smallest String With Swaps
+# add_problem(1203  Hard  sort-items-by-groups-respecting-dependencies) # Sort Items by Groups Respecting Dependencies
