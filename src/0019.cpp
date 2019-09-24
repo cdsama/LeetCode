@@ -43,7 +43,7 @@ class Solution {
             node = node->next;
         }
         auto size = list.size();
-        if (n == size) {
+        if (n == static_cast<int>(size)) {
             return head->next;
         } else {
             node = list[size - n - 1];
