@@ -77,6 +77,36 @@ class Solution2 {
     }
 };
 
+class Solution3 {
+   public:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        ListNode head(0);
+        ListNode* curr = &head;
+        while (l1 && l2) {
+            if (l1->val < l2->val) {
+                curr->next = l1;
+                l1 = l1->next;
+            } else {
+                curr->next = l2;
+                l2 = l2->next;
+            }
+            curr = curr->next;
+        }
+        while (l1) {
+            curr->next = l1;
+            l1 = l1->next;
+            curr = curr->next;
+        }
+        while (l2) {
+            curr->next = l2;
+            l2 = l2->next;
+            curr = curr->next;
+        }
+
+        return head.next;
+    }
+};
+
 TEST_CASE("merge-two-sorted-lists", "[21][Easy][linked-list]") {
     {
         Solution s;
@@ -88,6 +118,14 @@ TEST_CASE("merge-two-sorted-lists", "[21][Easy][linked-list]") {
     }
     {
         Solution2 s;
+        CHECK(ListEquals(s.mergeTwoLists(LIST(), LIST()), LIST()));
+        CHECK(ListEquals(s.mergeTwoLists(LIST(1, 3, 5), LIST(2, 4, 6)),
+                         LIST(1, 2, 3, 4, 5, 6)));
+        CHECK(ListEquals(s.mergeTwoLists(LIST(1, 2, 4), LIST(1, 3, 4)),
+                         LIST(1, 1, 2, 3, 4, 4)));
+    }
+    {
+        Solution3 s;
         CHECK(ListEquals(s.mergeTwoLists(LIST(), LIST()), LIST()));
         CHECK(ListEquals(s.mergeTwoLists(LIST(1, 3, 5), LIST(2, 4, 6)),
                          LIST(1, 2, 3, 4, 5, 6)));
