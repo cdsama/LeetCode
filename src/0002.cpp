@@ -84,19 +84,103 @@ class Solution {
     }
 };
 
+class Solution2 {
+   public:
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+        ListNode head(0);
+        ListNode *digi = &head;
+        int sum = 0;
+        while (l1 != nullptr || l2 != nullptr || sum != 0) {
+            if (l1) {
+                sum += l1->val;
+                l1 = l1->next;
+            }
+            if (l2) {
+                sum += l2->val;
+                l2 = l2->next;
+            }
+            digi->next = new ListNode(sum % 10);
+            sum /= 10;
+            digi = digi->next;
+        }
+        return head.next;
+    }
+};
+
+
+class Solution3 {
+   public:
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+        if (!l1) {
+            return l2;
+        }
+        if (!l2) {
+            return l1;
+        }
+        int sum = l1->val + l2->val;
+        ListNode *p = new ListNode(sum % 10);
+        p->next = addTwoNumbers(l1->next, l2->next);
+        if (sum > 9)
+        {
+            ListNode *evol = new ListNode(1);
+            bool need_release = (p->next != nullptr);
+            p->next = addTwoNumbers(p->next, evol);
+            if (need_release) // will leak when  p->next is not null
+            {
+                delete evol;
+            }
+        }
+        return p;
+    }
+};
+
 TEST_CASE("add-two-numbers", "[2][Medium][linked-list][math]") {
-    Solution s;
-    CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(2), LIST()), LIST(2)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(2)), LIST(3)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(1, 1), LIST(2, 2)), LIST(3, 3)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(9, 1, 1), LIST(2, 2, 2)),
-                     LIST(1, 4, 3)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(4, 1, 3, 1), LIST(0, 2, 5)),
-                     LIST(4, 3, 8, 1)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 9, 9, 9, 9)),
-                     LIST(0, 0, 0, 0, 0, 1)));
-    CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 0, 0, 0, 0, 1)),
-                     LIST(0, 1, 0, 0, 0, 1)));
+    {
+        Solution s;
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(2), LIST()), LIST(2)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(2)), LIST(3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1, 1), LIST(2, 2)), LIST(3, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(9, 1, 1), LIST(2, 2, 2)),
+                         LIST(1, 4, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(4, 1, 3, 1), LIST(0, 2, 5)),
+                         LIST(4, 3, 8, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 9, 9, 9, 9)),
+                         LIST(0, 0, 0, 0, 0, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 0, 0, 0, 0, 1)),
+                         LIST(0, 1, 0, 0, 0, 1)));
+    }
+    {
+        Solution2 s;
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(2), LIST()), LIST(2)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(2)), LIST(3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1, 1), LIST(2, 2)), LIST(3, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(9, 1, 1), LIST(2, 2, 2)),
+                         LIST(1, 4, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(4, 1, 3, 1), LIST(0, 2, 5)),
+                         LIST(4, 3, 8, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 9, 9, 9, 9)),
+                         LIST(0, 0, 0, 0, 0, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 0, 0, 0, 0, 1)),
+                         LIST(0, 1, 0, 0, 0, 1)));
+    }
+    {
+        Solution3 s;
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST()), LIST()));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(), LIST(1)), LIST(1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(2), LIST()), LIST(2)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(2)), LIST(3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1, 1), LIST(2, 2)), LIST(3, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(9, 1, 1), LIST(2, 2, 2)),
+                         LIST(1, 4, 3)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(4, 1, 3, 1), LIST(0, 2, 5)),
+                         LIST(4, 3, 8, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 9, 9, 9, 9)),
+                         LIST(0, 0, 0, 0, 0, 1)));
+        CHECK(ListEquals(s.addTwoNumbers(LIST(1), LIST(9, 0, 0, 0, 0, 1)),
+                         LIST(0, 1, 0, 0, 0, 1)));
+    }
 }
