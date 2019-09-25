@@ -56,7 +56,7 @@ add_problem(0019 Medium remove-nth-node-from-end-of-list) # Remove Nth Node From
 add_problem(0020  Easy  valid-parentheses) # Valid Parentheses
 add_problem(0021  Easy  merge-two-sorted-lists) # Merge Two Sorted Lists
 add_problem(0022 Medium generate-parentheses) # Generate Parentheses
-#add_problem(0023  Hard  merge-k-sorted-lists) # Merge k Sorted Lists
+add_problem(0023  Hard  merge-k-sorted-lists) # Merge k Sorted Lists
 #add_problem(0024 Medium swap-nodes-in-pairs) # Swap Nodes in Pairs
 #add_problem(0025  Hard  reverse-nodes-in-k-group) # Reverse Nodes in k-Group
 add_problem(0026  Easy  remove-duplicates-from-sorted-array) # Remove Duplicates from Sorted Array
