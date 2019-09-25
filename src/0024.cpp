@@ -11,9 +11,10 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 Note:
 
 Your algorithm should use only constant extra space.
-You may not modify the values in the list's nodes, only nodes itself may be changed.
+You may not modify the values in the list's nodes, only nodes itself may be
+changed.
 
-Tags: 
+Tags:
     1. Linked List
 
 Similar Questions:
@@ -30,14 +31,46 @@ Similar Questions:
  * };
  */
 class Solution {
-public:
+   public:
     ListNode* swapPairs(ListNode* head) {
-        
+        if (!head || !head->next) {
+            return head;
+        }
+
+        ListNode* new_head = head->next;
+        head->next = swapPairs(new_head->next);
+        new_head->next = head;
+        return new_head;
+    }
+};
+
+class Solution2 {
+   public:
+    ListNode* swapPairs(ListNode* head) {
+        ListNode** tmp = &head;
+        ListNode* first;
+        ListNode* second;
+
+        while (((first = *tmp) != nullptr) &&
+               ((second = first->next) != nullptr)) {
+            first->next = second->next;
+            second->next = first;
+            *tmp = second;
+            tmp = &first->next;
+        }
+        return head;
     }
 };
 
 TEST_CASE("swap-nodes-in-pairs", "[24][Medium][linked-list]") {
-    //TODO
-    CHECK(true);
+    {
+        Solution s;
+        CHECK(ListEquals(s.swapPairs(LIST(1, 2, 3, 4)), LIST(2, 1, 4, 3)));
+        CHECK(ListEquals(s.swapPairs(LIST(1, 2, 3)), LIST(2, 1, 3)));
+    }
+    {
+        Solution2 s;
+        CHECK(ListEquals(s.swapPairs(LIST(1, 2, 3, 4)), LIST(2, 1, 4, 3)));
+        CHECK(ListEquals(s.swapPairs(LIST(1, 2, 3)), LIST(2, 1, 3)));
+    }
 }
-
