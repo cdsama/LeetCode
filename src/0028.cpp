@@ -71,7 +71,7 @@ class Solution2 {  // Sunday
         }
         vector<int> shift(256, nn + 1);
         for (int i = 0; i < nn; ++i) {
-            shift[needle[i]] = nn - i;   // last order in str
+            shift[needle[i]] = nn - i;  // last appearance order in str
         }
         int s = 0;
         while (s <= nh - nn) {
@@ -99,20 +99,19 @@ class Solution3 {  // KMP
         if (nn > nh) {
             return -1;
         }
-        vector<int> next(nn, 0);
+
+        // ABABCABAAA
+        // 0123456789
+        // -001201231
+        vector<int> next(nn);
         next[0] = -1;
-        for (int i = 1, len = 0; i < nn - 1;) {
-            if (needle[i] == needle[len]) {  // DP 
+        for (int i = 0, len = -1; i < nn - 1;) {
+            if (len == -1 || needle[i] == needle[len]) {  // DP
                 len++;
-                next[i + 1] = len;
                 i++;
+                next[i] = len;
             } else {
-                if (len > 0) {
-                    len = next[len];
-                } else {
-                    next[i + 1] = len;
-                    i++;
-                }
+                len = next[len];
             }
         }
         int s = 0;
@@ -144,6 +143,7 @@ TEST_CASE("implement-strstr", "[28][Easy][two-pointers][string]") {
         CHECK(s.strStr("aaaaa", "") == 0);
         CHECK(s.strStr("aaaaaaaab", "aaab") == 5);
         CHECK(s.strStr("ababaababcaaa", "ababc") == 5);
+        CHECK(s.strStr("aabaaabaaac", "aabaaac") == 4);
     }
     {
         Solution2 s;
@@ -153,6 +153,7 @@ TEST_CASE("implement-strstr", "[28][Easy][two-pointers][string]") {
         CHECK(s.strStr("aaaaa", "") == 0);
         CHECK(s.strStr("aaaaaaaab", "aaab") == 5);
         CHECK(s.strStr("ababaababcaaa", "ababc") == 5);
+        CHECK(s.strStr("aabaaabaaac", "aabaaac") == 4);
     }
     {
         Solution3 s;
@@ -162,5 +163,6 @@ TEST_CASE("implement-strstr", "[28][Easy][two-pointers][string]") {
         CHECK(s.strStr("aaaaa", "") == 0);
         CHECK(s.strStr("aaaaaaaab", "aaab") == 5);
         CHECK(s.strStr("ababaababcaaa", "ababc") == 5);
+        CHECK(s.strStr("aabaaabaaac", "aabaaac") == 4);
     }
 }
